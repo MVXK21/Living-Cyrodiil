@@ -1,0 +1,166 @@
+# The Third Era, 3E 0 to 3E 432 (the knowledge cutoff; 3E 433 is quest-gated).
+# Adapted from UESP (https://en.uesp.net), CC BY-SA 2.5. Page: Lore:Third Era
+# (fetched Nov 4, 2026). Condensed to what people in Cyrodiil might know.
+# Left out: quest spoilers (such as who leads the Mythic Dawn), events that are
+# only of interest far from Cyrodiil, and everything from 3E 433 on.
+
+[[entry]]
+id = "3e-founding"
+text = "Tiber Septim united all of Tamriel and proclaimed the Third Era. He ruled for 38 years, died in 3E 38, and is worshipped today as Talos, one of the Nine Divines. Every emperor since has been of his Septim line."
+keywords = ["tiber", "septim", "talos", "third era", "empire", "founded", "unification", "united", "history", "emperor", "emperors"]
+known_by = "everyone"
+depth = "common"
+
+[[entry]]
+id = "3e-early-emperors"
+text = "After Tiber Septim came Pelagius I, murdered by the Dark Brotherhood in 3E 41, then Kintyra I, Uriel I, Uriel II, whose reign was full of plague and revolt, Pelagius II, and Antiochus, a debauched emperor whose rule saw civil wars and the War of the Isle against the sea elves of Pyandonea around 3E 110."
+keywords = ["pelagius", "kintyra", "uriel", "antiochus", "emperor", "emperors", "history", "war of the isle", "pyandonea", "maormer", "psijic"]
+known_by = "everyone"
+depth = "scholar"
+area = "history"
+
+[[entry]]
+id = "3e-red-diamond"
+text = "The War of the Red Diamond (from 3E 121) was a war of succession among the Septims: Potema, the Wolf Queen of Solitude, put her son on the throne as Uriel III, while her brothers Cephorus and Magnus fought her. Uriel III was taken at Ichidag and burned alive by a mob in 3E 127, Cephorus I became emperor, and Potema died in the siege of Solitude in 3E 137."
+keywords = ["red diamond", "potema", "wolf queen", "solitude", "uriel iii", "cephorus", "magnus", "war", "succession", "history"]
+known_by = "everyone"
+depth = "specialist"
+area = "history"
+
+[[entry]]
+id = "3e-knights-of-the-nine"
+text = "The Knights of the Nine were founded in 3E 111 by Sir Amiel Lannus to recover the lost relics of Pelinal Whitestrake, and the order was dissolved in 3E 131, never having recovered after the War of the Red Diamond."
+keywords = ["knights of the nine", "amiel", "lannus", "pelinal", "crusader", "relics", "order", "knight", "knights"]
+known_by = "everyone"
+depth = "scholar"
+area = "history"
+
+[[entry]]
+id = "3e-mad-pelagius-katariah"
+text = "Pelagius III, called Pelagius the Mad, took the throne in 3E 145 and died in an asylum on the Isle of Betony in 3E 153. His widow Katariah, a Dunmer, then ruled for forty-six years, one of the most glorious reigns in the Empire's history."
+keywords = ["pelagius", "mad", "katariah", "empress", "betony", "asylum", "dunmer", "history"]
+known_by = "everyone"
+depth = "specialist"
+area = "history"
+
+[[entry]]
+id = "3e-elder-council"
+text = "Since the days of Empress Katariah the Elder Council has held great power in the Empire, and under weak emperors it often held the real power. Uriel IV, Cephorus II and the young Uriel VI all struggled with it."
+keywords = ["elder council", "council", "power", "uriel iv", "cephorus", "history", "government", "politics"]
+known_by = "everyone"
+depth = "specialist"
+area = "history"
+
+[[entry]]
+id = "3e-camoran-usurper"
+text = "Around 3E 249 the Camoran Usurper led armies of daedra and undead through Valenwood and into Hammerfell. He was finally defeated in 3E 267 at the Battle of Firewaves on the Iliac Bay, by Baron Othrok of Dwynnen and his allies."
+keywords = ["camoran", "usurper", "valenwood", "hammerfell", "firewaves", "othrok", "dwynnen", "daedra", "undead", "history"]
+known_by = "everyone"
+depth = "scholar"
+area = "history"
+
+[[entry]]
+id = "3e-uriel-v-akavir"
+text = "Uriel V, crowned in 3E 268, made the Empire feared again with a run of conquests across the islands toward Akavir, then sailed the greatest fleet ever assembled to invade Akavir itself. He was killed at the battle of Ionith in 3E 290, and his five-year-old son became Uriel VI."
+keywords = ["uriel v", "akavir", "ionith", "tsaesci", "fleet", "invasion", "conquest", "uriel vi", "history", "emperor"]
+known_by = "everyone"
+depth = "specialist"
+area = "history"
+
+[[entry]]
+id = "3e-uriel-vi-to-pelagius-iv"
+text = "Uriel VI won back real power from the Elder Council and died after a fall from his horse in 3E 320. His sister Morihatha then ruled until assassins killed her in 3E 339, and her nephew Pelagius IV reigned until 3E 368, leaving Tamriel more united than it had been in centuries."
+keywords = ["uriel vi", "morihatha", "pelagius iv", "empress", "emperor", "history", "assassinated"]
+known_by = "everyone"
+depth = "scholar"
+area = "history"
+
+[[entry]]
+id = "3e-uriel-vii"
+text = "Uriel Septim VII was born in 3E 346 and crowned in 3E 368, and for decades worked to bind the provinces closer together. His sons were Geldall, born 3E 377, Enman, born 3E 378, and Ebel, born 3E 380."
+keywords = ["uriel", "septim", "vii", "emperor", "sons", "heirs", "geldall", "enman", "ebel", "prince", "princes", "reign"]
+known_by = "everyone"
+depth = "common"
+
+[[entry]]
+id = "3e-imperial-simulacrum"
+text = "In 3E 389 the Imperial Battlemage Jagar Tharn betrayed Uriel Septim VII, imprisoned him in another dimension and ruled in his place wearing his face, a time called the Imperial Simulacrum. A hero killed Tharn and freed the Emperor in 3E 399, the event called the Restoration."
+keywords = ["jagar", "tharn", "simulacrum", "battlemage", "imprisoned", "betrayed", "restoration", "staff of chaos", "emperor", "history"]
+known_by = "everyone"
+depth = "common"
+
+[[entry]]
+id = "3e-regional-wars"
+text = "During the years of the Simulacrum, regional wars broke out across Tamriel: the Five Year War between Valenwood and Elsweyr (about 3E 395 to 399), the Arnesian War in Morrowind (3E 396), and in High Rock the War of Betony between Daggerfall and Sentinel (3E 402 to 403)."
+keywords = ["five year war", "arnesian", "betony", "war", "wars", "valenwood", "elsweyr", "daggerfall", "sentinel", "history"]
+known_by = "everyone"
+depth = "specialist"
+area = "history"
+
+[[entry]]
+id = "3e-orsinium"
+text = "In 3E 399 Gortwog gro-Nagorm refounded Orsinium, the Orc nation, and has been fighting for its independence since."
+keywords = ["orsinium", "gortwog", "orc", "orcs", "orsimer", "nation", "kingdom"]
+known_by = "everyone"
+depth = "specialist"
+area = "history"
+
+[[entry]]
+id = "3e-warp-in-the-west"
+text = "In 3E 417 a strange event, called the Miracle of Peace or the Warp in the West, left the forty-four petty kingdoms around the Iliac Bay condensed into four: Daggerfall, Sentinel, Wayrest and Orsinium. Nobody agrees on what really happened."
+keywords = ["warp", "west", "miracle of peace", "iliac bay", "daggerfall", "sentinel", "wayrest", "orsinium", "high rock", "hammerfell"]
+known_by = "everyone"
+depth = "specialist"
+area = "history"
+
+[[entry]]
+id = "3e-morrowind-troubles"
+text = "Vvardenfell in Morrowind was opened to Imperial settlement in 3E 414. From 3E 427 came word of a cursed Blight from Red Mountain and of a hero there hailed as the Nerevarine, the reborn Nerevar of Dunmer prophecy. In 3E 430 King Helseth outlawed slavery in Morrowind."
+keywords = ["morrowind", "vvardenfell", "blight", "red mountain", "nerevarine", "nerevar", "helseth", "slavery", "slaves", "dunmer", "dark elf"]
+known_by = "everyone"
+depth = "specialist"
+area = "history"
+
+[[entry]]
+id = "3e-hannibal-traven"
+text = "In 3E 431 Arch-Mage Hannibal Traven brought substantial reforms to the Mages Guild."
+keywords = ["traven", "hannibal", "arch-mage", "archmage", "mages guild", "reform", "reforms", "guild"]
+known_by = "faction:Mages Guild"
+depth = "common"
+
+[[entry]]
+id = "3e-hannibal-traven-wider"
+text = "Hannibal Traven is Arch-Mage of the Mages Guild, and he has lately reformed how the Guild is run."
+keywords = ["traven", "hannibal", "arch-mage", "archmage", "mages guild", "guild"]
+known_by = "everyone"
+depth = "specialist"
+area = "magic"
+
+[[entry]]
+id = "3e-anvil-umbranox"
+text = "Corvus Umbranox, Count of Anvil and husband of Countess Millona Umbranox, vanished in 3E 422 and has not been seen since."
+keywords = ["anvil", "umbranox", "corvus", "millona", "count", "countess", "vanished", "missing", "disappeared"]
+known_by = "locals:Anvil"
+depth = "common"
+
+[[entry]]
+id = "3e-cheydinhal-thorn"
+text = "Since 3E 431 the son of the Count of Cheydinhal and his friends have been off adventuring, calling themselves the Knights of the Thorn."
+keywords = ["cheydinhal", "knights of the thorn", "thorn", "count", "son", "farwil", "knights"]
+known_by = "locals:Cheydinhal"
+depth = "common"
+
+[[entry]]
+id = "3e-emma-may"
+text = "The ship Emma May sank in Niben Bay in 3E 421, shortly after a mutiny aboard."
+keywords = ["emma may", "ship", "sank", "sunk", "mutiny", "niben bay", "wreck", "shipwreck"]
+known_by = "locals:Bravil"
+depth = "common"
+
+[[entry]]
+id = "3e-pocket-guide"
+text = "The Imperial Geographical Society published the third edition of the Pocket Guide to the Empire in 3E 432, by the authority of Uriel Septim VII, to account for the many changes since the Warp in the West."
+keywords = ["pocket guide", "geographical society", "map", "maps", "guide", "book"]
+known_by = "everyone"
+depth = "scholar"
+area = "history"

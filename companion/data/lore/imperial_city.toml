@@ -1,0 +1,259 @@
+# The Imperial City, as it stands in 3E 433 at the start of the game.
+# Adapted from UESP (https://en.uesp.net), CC BY-SA 2.5. Pages:
+# Oblivion:Imperial City, Lore:Imperial City, Oblivion:Imperial City People,
+# Oblivion:Market District, Oblivion:Elven Gardens District,
+# Oblivion:Talos Plaza District, Oblivion:Temple District, Oblivion:Arena District,
+# Oblivion:Arboretum, Oblivion:Waterfront District, Oblivion:Green Emperor Way,
+# Oblivion:Imperial Palace, Oblivion:Arcane University, Oblivion:Imperial City Prison,
+# Oblivion:Inns (fetched Nov 10, 2026).
+# Left out: quest spoilers, secret identities (fences, Thieves Guild and Dark
+# Brotherhood members, the Mythic Dawn), Fourth Era events, and 3E 433 events
+# that quests unlock.
+# Locals are matched by the NPC's location: "Imperial City" covers the whole
+# city, and each district's name covers that district.
+
+# ---- the city as a whole ---------------------------------------------------
+
+[[entry]]
+id = "ic-overview"
+text = "The Imperial City is the capital of Cyrodiil and of the whole Empire. It stands on City Isle in Lake Rumare, in the Heartlands at the centre of the province, a great ring of walls around White-Gold Tower and the Imperial Palace, with the Talos Bridge linking it to the mainland near the village of Weye."
+keywords = ["imperial city", "capital", "city isle", "lake rumare", "white-gold", "white gold", "tower", "heartlands", "talos bridge", "weye"]
+known_by = "everyone"
+depth = "common"
+
+[[entry]]
+id = "ic-local-summary"
+text = "You live in the Imperial City. Around Green Emperor Way and the Palace lie six walled districts: the Market District, the Elven Gardens, Talos Plaza, the Temple District, the Arena District and the Arboretum; outside the inner walls are the Waterfront with its harbour, the Arcane University and the Imperial Prison. The Imperial Watch keeps order."
+keywords = ["imperial city", "city", "here", "district", "districts", "news", "watch", "guard"]
+known_by = "locals:Imperial City"
+depth = "common"
+always = true
+
+# The Oblivion Crisis of the default story (crisis = true): left out when the
+# player's world knowledge replaces the world facts.
+[[entry]]
+id = "ic-emperor-murder"
+text = "Everyone in the city is still shaken by the Emperor's murder. Since then High Chancellor Ocato and the Elder Council govern from the Palace, and the throne stands empty."
+keywords = ["emperor", "murder", "throne", "news", "council", "ocato"]
+known_by = "locals:Imperial City"
+depth = "common"
+always = true
+crisis = true
+
+[[entry]]
+id = "ic-districts"
+text = "The Imperial City's districts each have their own character: the Market District for shops, the Elven Gardens for ordinary homes and taverns, Talos Plaza for the wealthy, the Temple District around the Temple of the One, the Arena District for the games, and the Arboretum, the city's park. The Waterfront, outside the walls by the docks, is the poorest part of the city."
+keywords = ["district", "districts", "market", "elven gardens", "talos plaza", "temple district", "arena district", "arboretum", "waterfront", "where", "neighbourhood", "quarter", "rich", "poor"]
+known_by = "locals:Imperial City"
+depth = "common"
+
+[[entry]]
+id = "ic-inns"
+text = "Inns in the Imperial City: the Merchants Inn in the Market District, kept by Velus Hosidius; the King and Queen Tavern and Luther Broad's Boarding House in the Elven Gardens; in Talos Plaza, the Tiber Septim Hotel, the finest and dearest in the city, and a separate tavern, the Foaming Flask, run by Ernest Manis; the All-Saints Inn in the Temple District, kept by Willet; and the Bloated Float, an inn on an old ship moored at the Waterfront."
+keywords = ["inn", "inns", "tavern", "taverns", "room", "bed", "sleep", "drink", "ale", "mead", "wine", "food", "eat", "meal", "stay", "merchants inn", "king and queen", "luther broad", "boarding house", "tiber septim hotel", "foaming flask", "all-saints", "bloated float"]
+known_by = "locals:Imperial City"
+depth = "common"
+
+[[entry]]
+id = "ic-watch"
+until = "TG07Lex:completed"
+text = "The Imperial Watch guards the Imperial City. Captain Hieronymus Lex is the best known of its officers, stern and set on catching the Gray Fox, and he keeps a hard eye on the Waterfront. The guards sleep in the watch towers at the six corners of the city."
+keywords = ["watch", "guard", "guards", "legion", "captain", "lex", "hieronymus", "law", "crime", "arrest", "tower", "towers", "gray fox", "grey fox"]
+known_by = "locals:Imperial City"
+depth = "common"
+
+[[entry]]
+id = "ic-gray-fox"
+text = "The Gray Fox is a master thief the Watch has never caught, said to steal from the rich and the proud and never to kill. Some say he's been at it for a hundred years, which can't be true, and some folk at the Waterfront speak of him almost fondly."
+keywords = ["gray fox", "grey fox", "thief", "thieves", "stolen", "theft", "steal", "thieves guild"]
+known_by = "locals:Imperial City"
+depth = "common"
+
+[[entry]]
+id = "ic-black-horse-courier"
+text = "The Black Horse Courier, the Empire's newssheet, is printed in the Imperial City's Market District, and people read the latest copy for news of the city and the provinces."
+keywords = ["news", "newssheet", "newspaper", "courier", "black horse", "read", "rumour", "rumours", "rumor", "rumors", "heard"]
+known_by = "locals:Imperial City"
+depth = "common"
+
+[[entry]]
+id = "ic-sewers"
+text = "Beneath the Imperial City runs a sewer as big as the city itself, full of rats, goblins and worse. Sensible folk keep out of it."
+keywords = ["sewer", "sewers", "underground", "below", "rats", "rat", "goblins", "tunnel", "tunnels"]
+known_by = "locals:Imperial City"
+depth = "common"
+
+[[entry]]
+id = "ic-stables"
+text = "Horses for the Imperial City are kept at the Chestnut Handy Stables, on the mainland at the far end of the Talos Bridge, by Weye."
+keywords = ["horse", "horses", "stable", "stables", "chestnut handy", "ride", "mount"]
+known_by = "locals:Imperial City"
+depth = "common"
+
+[[entry]]
+id = "ic-history"
+text = "White-Gold Tower was raised by the Ayleids, the old elves who ruled Cyrodiil before men did. Saint Alessia took it when she freed humankind from them in the First Era, and since Tiber Septim founded the Third Empire the Imperial City has been the seat of the Emperors."
+keywords = ["history", "old", "ancient", "ayleid", "ayleids", "elves", "alessia", "tiber septim", "founded", "built", "white-gold", "white gold", "tower"]
+known_by = "everyone"
+depth = "specialist"
+area = "history"
+
+[[entry]]
+id = "ic-dragonfires"
+text = "The Temple of the One holds the Dragonfires, which every new Emperor of the Septim blood must light to take the throne, and which keep the Empire safe from Daedric invasion. That tradition goes back to Saint Alessia's covenant with Akatosh."
+keywords = ["dragonfire", "dragonfires", "temple of the one", "covenant", "alessia", "akatosh", "throne", "crown", "emperor", "amulet"]
+known_by = "everyone"
+depth = "specialist"
+area = "history"
+
+# ---- the districts -----------------------------------------------------------
+
+[[entry]]
+id = "ic-market-local"
+text = "You're in the Market District, on the northeastern side of the Imperial City, where most of the city's shops are, from smiths and alchemists to clothiers, jewellers and booksellers. The Merchants Inn, the Feed Bag and the Black Horse Courier's office are here too."
+keywords = ["market", "market district", "here", "shop", "shops"]
+known_by = "locals:Market District"
+depth = "common"
+always = true
+
+[[entry]]
+id = "ic-market-smiths"
+text = "For arms and armour in the Market District: A Fighting Chance, run by the Redguard Rohssan; Slash 'N Smash, the Orc Urbul gro-Orkulg's shop; Stonewall Shields, kept by Viator Accius; and The Best Defense, run by Maro Rufus and Varnado. They all do repairs."
+keywords = ["smith", "smiths", "blacksmith", "weapon", "weapons", "sword", "armor", "armour", "shield", "shields", "repair", "repairs", "fighting chance", "slash", "stonewall", "best defense", "rohssan", "urbul", "viator", "varnado", "maro"]
+known_by = "locals:Imperial City"
+depth = "common"
+
+[[entry]]
+id = "ic-market-magic"
+text = "Magic in the Market District: the Mystic Emporium, run by the High Elves Aurelinwae and Calindil; Edgar's Discount Spells, kept by Edgar Vautrine; and Rindir's Staffs. The Arcane University on City Isle sells spells as well, but only to the Mages Guild."
+keywords = ["magic", "spell", "spells", "enchanted", "enchant", "staff", "staffs", "scroll", "scrolls", "mystic emporium", "edgar", "rindir", "aurelinwae", "calindil", "mage", "mages"]
+known_by = "locals:Imperial City"
+depth = "common"
+
+[[entry]]
+id = "ic-market-goods"
+text = "Other shops in the Market District: the Three Brothers Trade Goods, run by the Verus brothers; Jensine's \"Good as New\" Merchandise; the Copious Coinpurse, a new general store run by the Bosmer Thoronir; Divine Elegance for fine clothes, run by Palonirya; Red Diamond Jewelry, the Nord Hamlof Red-Tooth's shop; First Edition, Phintias's bookshop; and two alchemists, the Gilded Carafe and the Main Ingredient."
+keywords = ["shop", "shops", "store", "buy", "sell", "trade", "goods", "general", "clothes", "clothing", "jewel", "jewelry", "jewellery", "ring", "rings", "amulet", "book", "books", "bookshop", "alchemy", "alchemist", "potion", "potions", "ingredients", "three brothers", "jensine", "copious coinpurse", "thoronir", "divine elegance", "palonirya", "red diamond", "first edition", "phintias", "gilded carafe", "main ingredient"]
+known_by = "locals:Imperial City"
+depth = "common"
+
+[[entry]]
+id = "ic-market-commerce"
+text = "The Office of Imperial Commerce in the Market District handles property in the city; Vinicia Melissaeia there sells the odd house, cheapest being a shack at the Waterfront."
+keywords = ["house", "home", "property", "buy a house", "shack", "commerce", "office", "vinicia", "land"]
+known_by = "locals:Imperial City"
+depth = "common"
+
+[[entry]]
+id = "ic-elven-gardens-local"
+text = "You're in the Elven Gardens District, on the northwestern side of the Imperial City, a quiet district of ordinary homes. The King and Queen Tavern, run by Ley Marillin and her husband Pista, and Luther Broad's Boarding House, a cheap place to stay, are both here."
+keywords = ["elven gardens", "here", "tavern", "king and queen", "luther broad", "boarding house", "ley", "pista"]
+known_by = "locals:Elven Gardens"
+depth = "common"
+always = true
+
+[[entry]]
+id = "ic-talos-plaza-local"
+text = "You're in the Talos Plaza District, on the western side of the Imperial City, where the wealthy live around the great dragon statue in the plaza. The Tiber Septim Hotel, the finest inn in the city, kept by Augusta Calidia, and the Foaming Flask tavern, run by Ernest Manis, are here."
+keywords = ["talos plaza", "here", "rich", "wealthy", "statue", "dragon", "tiber septim hotel", "foaming flask", "augusta", "ernest"]
+known_by = "locals:Talos Plaza"
+depth = "common"
+always = true
+
+[[entry]]
+id = "ic-talos-plaza-people"
+text = "Talos Plaza's notable residents include Umbacano, a rich and haughty High Elf who collects Ayleid relics in his manor, and Jakben, the Earl of Imbel, a nobleman who keeps very odd hours and is rarely seen by day."
+keywords = ["umbacano", "collector", "ayleid", "relics", "manor", "jakben", "earl", "imbel", "noble", "nobles", "nobility", "rich"]
+known_by = "locals:Imperial City"
+depth = "common"
+
+[[entry]]
+id = "ic-temple-local"
+text = "You're in the Temple District, on the southwestern side of the Imperial City, around the Temple of the One, the great cathedral where each new Emperor is crowned and lights the Dragonfires. Willet keeps the All-Saints Inn here."
+keywords = ["temple district", "temple of the one", "temple", "here", "cathedral", "all-saints", "willet", "priest", "priests"]
+known_by = "locals:Temple District"
+depth = "common"
+always = true
+
+[[entry]]
+id = "ic-temple-of-the-one"
+text = "The Temple of the One in the Temple District is the greatest temple in Cyrodiil, devoted to Akatosh and the Nine. Its priests heal the sick and sell blessings, and it is where each new Emperor is crowned."
+keywords = ["temple", "temple of the one", "akatosh", "nine", "divines", "priest", "priests", "heal", "healing", "blessing", "pray", "worship", "crowned"]
+known_by = "locals:Imperial City"
+depth = "common"
+
+[[entry]]
+id = "ic-arena-local"
+text = "You're in the Arena District, on the eastern side of the Imperial City. It's all the Arena here: the great amphitheatre where gladiators of the Blue and Yellow teams fight for glory and gold, while the crowds bet on them."
+keywords = ["arena district", "arena", "here", "fight", "fights", "gladiator", "gladiators", "bet", "betting", "blue team", "yellow team"]
+known_by = "locals:Arena District"
+depth = "common"
+always = true
+
+[[entry]]
+id = "ic-arena"
+until = "ArenaDialogue>=50"
+text = "The Arena in the Imperial City holds the most famous combat in the Empire. The reigning Grand Champion is Agronak gro-Malog, an Orc called the Gray Prince, who has held the title for years. Ysabel Andronicus runs the Arena, and Owyn the Blademaster trains and matches the fighters."
+keywords = ["arena", "grand champion", "champion", "gray prince", "grey prince", "agronak", "gladiator", "gladiators", "fight", "fights", "match", "ysabel", "owyn", "blademaster", "bet", "betting"]
+known_by = "everyone"
+depth = "common"
+
+[[entry]]
+id = "ic-arboretum-local"
+text = "You're in the Arboretum, the Imperial City's park on its southeastern side, with statues of the Nine Divines among the trees and Talos in the centre. People come here for a walk and a moment's quiet."
+keywords = ["arboretum", "park", "here", "garden", "gardens", "trees", "statue", "statues", "nine divines", "talos"]
+known_by = "locals:Arboretum"
+depth = "common"
+always = true
+
+[[entry]]
+id = "ic-waterfront-local"
+text = "You're at the Waterfront, the Imperial City's harbour outside the city walls, where ships come up the Niben from Topal Bay. It's the poorest part of the city, a shanty town of shacks by the docks, with the Imperial Trading Company's warehouses, the lighthouse and the Bloated Float, an inn on an old ship."
+keywords = ["waterfront", "here", "harbour", "harbor", "docks", "dock", "ship", "ships", "boat", "shack", "shacks", "poor", "lighthouse", "trading company", "bloated float"]
+known_by = "locals:Waterfront"
+depth = "common"
+always = true
+
+[[entry]]
+id = "ic-waterfront"
+text = "The Waterfront is where the Imperial City's poor live, in shacks by the docks. The Imperial Trading Company has its office and warehouses there, the Bloated Float inn is an old ship kept by Ormil, and a galleon called the Marie Elena is moored in the harbour. The Watch, under Captain Lex, treats the place as a nest of thieves."
+keywords = ["waterfront", "docks", "harbour", "harbor", "ship", "ships", "poor", "shack", "shacks", "trading company", "bloated float", "ormil", "marie elena", "galleon", "lighthouse"]
+known_by = "locals:Imperial City"
+depth = "common"
+
+[[entry]]
+id = "ic-palace"
+text = "Green Emperor Way is the garden ring around the Imperial Palace and White-Gold Tower at the heart of the city, with the tombs of great heroes along it. The Elder Council meets in the Palace, led by High Chancellor Ocato."
+keywords = ["palace", "imperial palace", "green emperor way", "white-gold", "white gold", "tower", "elder council", "ocato", "chancellor", "council", "government", "tomb", "tombs"]
+known_by = "locals:Imperial City"
+depth = "common"
+
+[[entry]]
+id = "ic-palace-local"
+text = "You're on Green Emperor Way, the gardens around the Imperial Palace at the heart of the Imperial City. The Elder Council sits in the Palace, led by High Chancellor Ocato."
+keywords = ["green emperor way", "palace", "here", "council", "ocato"]
+known_by = "locals:Green Emperor Way"
+depth = "common"
+always = true
+
+[[entry]]
+id = "ic-arcane-university"
+until = "MG18KingofWorms:completed"
+text = "The Arcane University, on City Isle just outside the city walls, is the seat of the Mages Guild, led by Arch-Mage Hannibal Traven. Only full members of the Guild are allowed inside; others must earn a recommendation from each of the Guild's city halls first."
+keywords = ["arcane university", "university", "mages guild", "mage", "mages", "arch-mage", "archmage", "traven", "hannibal", "magic", "study", "recommendation"]
+known_by = "everyone"
+depth = "common"
+
+[[entry]]
+id = "ic-arcane-university-inside"
+text = "At the Arcane University, Raminus Polus, the Master-at-Arms, gives members their tasks; the Mystic Archives hold the Guild's books, under the Argonian scholar Tar-Meena; and the Praxographical Center sells spells and lets mages make their own, while the Enchantment Center and the Chironasium are where items and staves are enchanted."
+keywords = ["arcane university", "raminus", "polus", "master-at-arms", "tar-meena", "archives", "mystic archives", "library", "spellmaking", "spell making", "enchant", "enchanting", "enchantment", "chironasium", "praxographical", "lodge"]
+known_by = "faction:Mages Guild"
+depth = "common"
+
+[[entry]]
+id = "ic-prison"
+text = "The Imperial Prison stands on City Isle by the Market District, and its cells hold the worst the Empire catches. Its tunnels run deep beneath the city."
+keywords = ["prison", "jail", "gaol", "cell", "cells", "prisoner", "prisoners", "locked up", "dungeon"]
+known_by = "locals:Imperial City"
+depth = "common"

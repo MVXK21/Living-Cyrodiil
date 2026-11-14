@@ -1,0 +1,88 @@
+# Living Cyrodiil companion settings.
+#
+# setup.ps1 copies this file to settings.local.toml. Edit THAT file, not this one.
+# settings.local.toml is ignored by git, so your API key never leaves your PC.
+
+[llm]
+# Any OpenAI-compatible service. Default: OpenRouter (one key, many models).
+base_url = "https://openrouter.ai/api/v1"
+
+# Paste your OpenRouter key between the quotes (starts with "sk-or-").
+api_key = "PASTE_YOUR_OPENROUTER_KEY_HERE"
+
+# Model ID from openrouter.ai/models. Fast and cheap models feel best for chat.
+model = "anthropic/claude-haiku-5.5"
+
+# Higher = more varied replies, lower = more predictable. 0.0 to 1.5.
+temperature = 0.8
+
+# Upper limit on reply length in tokens (about 4 sentences fit in 200).
+max_tokens = 250
+
+# Give up on a reply after this many seconds.
+timeout_seconds = 30
+
+# Let the model think before it answers. Off by default: NPC replies don't
+# need it, it adds delay, and it can use up max_tokens before any words come
+# out. Only sent to OpenRouter.
+reasoning = false
+
+[speech]
+# false = no microphone: you type to NPCs with the type key (F3) instead, and
+# speech-to-text isn't loaded.
+enabled = true
+# "whisper" or "moonshine". Both run locally on your CPU; no internet needed after the first download.
+engine = "whisper"
+# Whisper size: "base.en" (fast) or "small.en" (more accurate, slower).
+whisper_model = "base.en"
+# Moonshine size: "tiny" or "base".
+moonshine_model = "base"
+# Microphone: leave empty for the Windows default, or a number from:  stt_test.ps1 -devices
+mic_device = ""
+# Bluetooth headsets: true keeps the mic open (no clipped first word, but game audio
+# stays in low "hands-free" quality). false opens it only while you talk.
+keep_mic_open = false
+# Transcribe at pauses while you hold the talk key, so your words are usually
+# ready the moment you let go (saves about 0.6 s). false = only after release.
+transcribe_while_talking = true
+
+[voice]
+# NPCs speak their replies aloud, in voices cloned from your own game's voice
+# files (Pocket TTS, on your CPU). false = subtitles only.
+enabled = true
+# Pocket TTS config file. Leave as is unless you know you need another.
+config = "data/tts/pocket_english_2026-04.yaml"
+# If the reply is slow, the NPC says a short sound ("Hmm.", "Well...") this many
+# seconds after you release the talk key, so you're not left waiting in silence.
+# Normal replies come sooner and never trigger it. 0 = never.
+filler_after_seconds = 3.0
+# Lip-sync: a .lip file with each spoken line, so the NPC's mouth moves like in
+# vanilla dialogue. "model" = mouth shapes learned from your game's own lip files
+# (built once, the first time, in a few minutes; until then the mouth just follows
+# the loudness). "test" = a test pattern (the jaw opens and shuts three times a
+# second). "off" = the mouth doesn't move.
+lip_sync = "model"
+
+[game]
+# Local port the game plugin connects to. Must match [Companion] Port in
+# OBSE/Plugins/LivingCyrodiil.ini. Only change it if another program uses it.
+port = 47833
+# Oblivion's Data folder, for reading your own voice files. Leave empty to find
+# it automatically (from where Windows says Oblivion is installed).
+data_folder = ""
+
+[world]
+# Which setting profile to use (files in companion/data/setting_<name>.toml).
+setting_profile = "vanilla"
+# Your own world knowledge: numbered entries you switch on and off, which NPCs
+# treat as the truth of their world. Created with instructions on first run.
+# A path relative to the companion folder, or a full path.
+knowledge_file = "world_knowledge.txt"
+# What NPCs know of events in your game: "both" (your quest progress, plus
+# the world knowledge file, which wins where they disagree), "automatic"
+# (quest progress only, the file is ignored) or "manual" (the file only).
+mode = "both"
+
+[logging]
+# INFO is normal. DEBUG also logs every full prompt sent to the LLM.
+level = "INFO"

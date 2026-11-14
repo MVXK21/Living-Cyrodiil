@@ -1,0 +1,171 @@
+# Factions, the gods, the provinces and their peoples, and the creatures of
+# Cyrodiil, as ordinary people of 3E 433 know them.
+# Adapted from UESP (https://en.uesp.net), CC BY-SA 2.5. Pages:
+# Oblivion:Fighters Guild, Oblivion:Mages Guild, Oblivion:Thieves Guild,
+# Oblivion:Dark Brotherhood, Lore:Imperial Legion, Lore:Blades, Lore:Nine Divines,
+# Lore:Daedric Princes, Lore:Tamriel, Lore:Races, Oblivion:Creatures
+# (fetched Nov 10, 2026).
+# Left out: the guilds' inner secrets (who leads the Thieves Guild or the
+# Dark Brotherhood, where they meet), quest spoilers, the Mythic Dawn
+# (3E 433, quest-gated), Fourth Era events.
+
+# ---- guilds and institutions -------------------------------------------------
+
+[[entry]]
+id = "fighters-guild"
+until = "FGD09Hist:completed"
+text = "The Fighters Guild hires out its members as guards, monster-slayers and escorts, with a hall in every city and its head hall in Chorrol under Guildmaster Vilena Donton. Lately it has been losing contracts to the cheaper Blackwood Company of Leyawiin."
+keywords = ["fighters guild", "fighter", "fighters", "guild", "mercenary", "mercenaries", "contract", "contracts", "hire", "vilena", "donton", "work", "join"]
+known_by = "everyone"
+depth = "common"
+
+[[entry]]
+id = "fighters-guild-members"
+text = "In the Fighters Guild, a new member takes contracts from their hall's head, earns rank by doing them honestly, and is expected never to steal or kill outside a contract; the Guildmaster in Chorrol hands out the most important work. Members are glad of the work but worried about the Blackwood Company stealing it."
+keywords = ["fighters guild", "guild", "rank", "contract", "contracts", "rules", "guildmaster", "promotion", "member", "members", "blackwood"]
+known_by = "faction:Fighters Guild"
+depth = "common"
+
+[[entry]]
+id = "mages-guild"
+until = "MG18KingofWorms:completed"
+text = "The Mages Guild trains and sells magic, with a hall in every city and its seat at the Arcane University in the Imperial City, under Arch-Mage Hannibal Traven. Anyone may join a local hall, but only those recommended by every hall may enter the University. Traven has banned necromancy from the Guild, which not every mage liked."
+keywords = ["mages guild", "mage", "mages", "guild", "magic", "arcane university", "traven", "arch-mage", "archmage", "necromancy", "necromancer", "necromancers", "join", "recommendation"]
+known_by = "everyone"
+depth = "common"
+
+[[entry]]
+id = "mages-guild-members"
+text = "A new member of the Mages Guild must earn a recommendation from the head of every one of the seven city halls before they may enter the Arcane University, where they can make spells and enchant items. The Council of Mages governs the Guild under the Arch-Mage, and the ban on necromancy is taken very seriously."
+keywords = ["mages guild", "guild", "recommendation", "recommendations", "hall", "halls", "arcane university", "council", "council of mages", "rank", "necromancy", "member", "members", "join"]
+known_by = "faction:Mages Guild"
+depth = "common"
+
+[[entry]]
+id = "imperial-legion"
+text = "The Imperial Legion is the Empire's army. In Cyrodiil it patrols the roads and garrisons the forts; each city's own guard keeps the peace inside its walls, and the Imperial Watch guards the capital."
+keywords = ["legion", "imperial legion", "army", "soldier", "soldiers", "patrol", "patrols", "guard", "guards", "watch", "fort", "forts"]
+known_by = "everyone"
+depth = "common"
+
+[[entry]]
+id = "blades"
+text = "The Blades are the Emperor's own bodyguards and agents, warriors in Akaviri armour sworn to protect the Dragonborn emperors."
+keywords = ["blades", "blade", "bodyguard", "bodyguards", "akaviri", "emperor", "guard", "dragonborn"]
+known_by = "everyone"
+depth = "common"
+
+# The Oblivion Crisis of the default story (crisis = true): left out when the
+# player's world knowledge replaces the world facts.
+[[entry]]
+id = "blades-failed"
+text = "Folk say the Blades failed: the Emperor and his sons were murdered despite them."
+keywords = ["blades", "blade", "bodyguard", "bodyguards", "emperor", "murder", "murdered", "assassination"]
+known_by = "everyone"
+depth = "common"
+crisis = true
+
+[[entry]]
+id = "arena-faction"
+text = "Any fighter can join the Arena in the Imperial City as a gladiator, starting at the bottom rank and fighting their way up through matches toward the title of Grand Champion."
+keywords = ["arena", "join", "gladiator", "gladiators", "match", "matches", "fight", "rank", "grand champion"]
+known_by = "everyone"
+depth = "common"
+
+[[entry]]
+id = "thieves-guild-rumour"
+text = "Everyone has heard of the Thieves Guild, though the Watch says there's no such thing. People say its members live among the beggars, steal only from those who can afford it, and never kill, and that the Gray Fox leads them."
+keywords = ["thieves guild", "thief", "thieves", "steal", "stealing", "theft", "gray fox", "grey fox", "beggar", "beggars", "fence"]
+known_by = "everyone"
+depth = "common"
+
+[[entry]]
+id = "dark-brotherhood-rumour"
+text = "The Dark Brotherhood is a guild of assassins that kills for pay. Folk say that if you perform the Black Sacrament, a dark ritual calling on the Night Mother, they will come to take the contract, and that they recruit murderers by visiting them in their sleep."
+keywords = ["dark brotherhood", "assassin", "assassins", "murder", "murderer", "contract", "kill", "black sacrament", "night mother", "sithis"]
+known_by = "everyone"
+depth = "common"
+
+# ---- gods and Daedra -----------------------------------------------------------
+
+[[entry]]
+id = "nine-divines"
+text = "The Nine Divines are the gods of the Empire: Akatosh, the dragon god of time and chief of the Nine; Arkay, god of life and death; Dibella, goddess of beauty and love; Julianos, god of wisdom and law; Kynareth, goddess of the sky and nature; Mara, goddess of love and mercy; Stendarr, god of mercy and justice; Zenithar, god of work and trade; and Talos, Tiber Septim made a god."
+keywords = ["nine", "divines", "gods", "god", "goddess", "pray", "prayer", "worship", "akatosh", "arkay", "dibella", "julianos", "kynareth", "mara", "stendarr", "zenithar", "talos", "religion", "faith"]
+known_by = "everyone"
+depth = "common"
+
+[[entry]]
+id = "nine-divines-chapels"
+text = "Each city has a great chapel to one of the Nine: Akatosh in Kvatch, Arkay in Cheydinhal, Dibella in Anvil, Julianos in Skingrad, Mara in Bravil, Stendarr in Chorrol, Talos in Bruma and Zenithar in Leyawiin, with the Temple of the One in the Imperial City for all of them. Their priests heal, bless and bury the dead, and the wayshrines of the Nine along the roads bless travellers."
+keywords = ["chapel", "chapels", "temple", "temples", "priest", "priests", "heal", "healing", "bless", "blessing", "wayshrine", "wayshrines", "shrine", "shrines"]
+known_by = "everyone"
+depth = "common"
+
+[[entry]]
+id = "daedra"
+text = "The Daedra are the spirits of Oblivion, and the most powerful, the Daedric Princes, such as Mehrunes Dagon, Molag Bal, Sanguine and Sheogorath, are worshipped only by fools, cultists and the desperate. Decent folk keep away from their shrines in the wilds."
+keywords = ["daedra", "daedric", "prince", "princes", "oblivion", "dagon", "mehrunes", "molag bal", "sanguine", "sheogorath", "azura", "hircine", "namira", "vaermina", "clavicus", "boethiah", "malacath", "mephala", "meridia", "peryite", "hermaeus", "nocturnal", "shrine", "shrines", "cult", "cultist", "cultists"]
+known_by = "everyone"
+depth = "common"
+
+[[entry]]
+id = "daedra-scholar"
+text = "Scholars count sixteen Daedric Princes, each ruling a realm of Oblivion: among them Mehrunes Dagon, Prince of Destruction; Molag Bal, of domination; Azura, of dusk and dawn; Boethiah, of plots; Hircine, of the hunt; Sheogorath, of madness; and Hermaeus Mora, of forbidden knowledge. Each has a shrine somewhere in Cyrodiil where its followers gather on its summoning day."
+keywords = ["daedric princes", "princes", "sixteen", "realm", "realms", "oblivion", "dagon", "molag bal", "azura", "boethiah", "hircine", "sheogorath", "hermaeus mora", "shrine", "summoning", "artifact", "artifacts"]
+known_by = "everyone"
+depth = "scholar"
+area = "magic"
+
+# ---- the provinces and their peoples -----------------------------------------
+
+[[entry]]
+id = "tamriel-provinces"
+text = "The Empire holds all nine provinces of Tamriel: Cyrodiil at its heart, Skyrim of the Nords to the north, Morrowind of the Dunmer to the east, Black Marsh of the Argonians and Elsweyr of the Khajiit to the south, Valenwood of the Bosmer and the Summerset Isles of the Altmer to the southwest, and Hammerfell of the Redguards and High Rock of the Bretons and Orcs to the west."
+keywords = ["tamriel", "province", "provinces", "empire", "skyrim", "morrowind", "black marsh", "elsweyr", "valenwood", "summerset", "hammerfell", "high rock", "world", "lands", "country", "countries"]
+known_by = "everyone"
+depth = "common"
+
+[[entry]]
+id = "races-of-tamriel"
+text = "Cyrodiil's people come from every province: Imperials, the native folk; Nords, big and hardy; Redguards, fierce warriors; Bretons, with a gift for magic; Dunmer or Dark Elves, proud and grim; Altmer or High Elves, haughty and learned; Bosmer or Wood Elves, quick archers; Orcs, strong smiths and soldiers; Argonians, lizard-folk of the marshes; and Khajiit, cat-folk of Elsweyr."
+keywords = ["race", "races", "people", "folk", "imperial", "imperials", "nord", "nords", "redguard", "redguards", "breton", "bretons", "dunmer", "dark elf", "altmer", "high elf", "bosmer", "wood elf", "orc", "orcs", "orsimer", "argonian", "argonians", "khajiit", "elf", "elves"]
+known_by = "everyone"
+depth = "common"
+
+[[entry]]
+id = "ayleids"
+text = "The Ayleids, the old wild elves, ruled Cyrodiil before humans did and built the white stone ruins that still stand in the wilds, many of them full of traps, undead and treasure. Saint Alessia overthrew them in the First Era with the help of the gods."
+keywords = ["ayleid", "ayleids", "elves", "ruin", "ruins", "white", "welkynd", "varla", "ancient", "alessia", "first era"]
+known_by = "everyone"
+depth = "common"
+
+# ---- creatures and dangers -------------------------------------------------------
+
+[[entry]]
+id = "creatures-common"
+text = "Out in the wilds there are wolves, bears, boars and mountain lions; mudcrabs on the shores and slaughterfish in the water; goblins in the caves, who raid farms; and trolls, ogres and minotaurs in the remoter places. Will-o-the-wisps glow in the dark of old ruins and woods."
+keywords = ["creature", "creatures", "animal", "animals", "beast", "beasts", "monster", "monsters", "wolf", "wolves", "bear", "bears", "boar", "lion", "mudcrab", "mudcrabs", "slaughterfish", "goblin", "goblins", "troll", "trolls", "ogre", "ogres", "minotaur", "minotaurs", "wisp", "wisps", "hunt", "hunting"]
+known_by = "everyone"
+depth = "common"
+
+[[entry]]
+id = "undead-and-necromancers"
+text = "Ancient tombs and ruins are haunted by skeletons, zombies, ghosts and wraiths. Necromancers raise the dead for their own ends, and since the Mages Guild banned necromancy they've been hiding out in caves and forts."
+keywords = ["undead", "skeleton", "skeletons", "zombie", "zombies", "ghost", "ghosts", "wraith", "wraiths", "lich", "necromancer", "necromancers", "necromancy", "tomb", "tombs", "crypt", "crypts"]
+known_by = "everyone"
+depth = "common"
+
+[[entry]]
+id = "vampires"
+text = "Vampires are real enough, people say: they hide in caves and old ruins and feed on the living, and someone bitten can catch the vampire's disease, Porphyric Hemophilia, and turn into one in a few days unless a priest cures it in time."
+keywords = ["vampire", "vampires", "vampirism", "bite", "bitten", "blood", "porphyric", "hemophilia", "disease", "cure"]
+known_by = "everyone"
+depth = "common"
+
+[[entry]]
+id = "diseases"
+text = "Rats, wolves and other beasts carry diseases such as Collywobbles, Rockjoint and Brain Fever; a priest's blessing at any chapel or wayshrine, or a cure-disease potion, will clear them."
+keywords = ["disease", "diseases", "sick", "sickness", "ill", "illness", "cure", "collywobbles", "rockjoint", "brain fever", "plague", "potion"]
+known_by = "everyone"
+depth = "common"

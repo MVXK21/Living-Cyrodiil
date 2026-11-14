@@ -1,0 +1,62 @@
+# Bravil, as it stands in 3E 433 at the start of the game.
+# Adapted from UESP (https://en.uesp.net), CC BY-SA 2.5. Pages:
+# Oblivion:Bravil, Oblivion:Bravil People, Lore:Bravil (fetched Nov 10, 2026).
+# Left out: the Thieves Guild's doyen and fence, the Night Mother's crypt and
+# the Dark Brotherhood, quest spoilers, the city's gate (3E 433, quest-gated).
+
+[[entry]]
+id = "bravil-overview"
+text = "Bravil is a Nibenese city in the Nibenay Valley of southern Cyrodiil, on Niben Bay at the end of the Green Road south of the Imperial City. It's said to be the poorest city in the province: damp, built of wood on the marshy banks of the Larsius River, with a reputation for skooma and thieves."
+keywords = ["bravil", "city", "town", "nibenay", "niben bay", "green road", "larsius", "river", "marsh", "poor", "skooma", "south"]
+known_by = "everyone"
+depth = "common"
+
+[[entry]]
+id = "bravil-local-summary"
+text = "You live in Bravil, a damp, poor river city of wooden houses and walkways over the Larsius. The Great Chapel of Mara is its finest building, Castle Bravil stands behind its garden on the east side, and the statue of the Lucky Old Lady watches over the city."
+keywords = ["bravil", "city", "town", "here", "news", "river", "poor"]
+known_by = "locals:Bravil"
+depth = "common"
+always = true
+
+[[entry]]
+id = "bravil-ruler"
+text = "Count Regulus Terentius rules Bravil from Castle Bravil. He's an arrogant noble, and the whole city knows his son Gellius spends his days in the local skooma den."
+keywords = ["count", "ruler", "rules", "regulus", "terentius", "castle", "court", "gellius", "son", "skooma"]
+known_by = "locals:Bravil"
+depth = "common"
+
+[[entry]]
+id = "bravil-ruler-public"
+text = "Bravil is ruled by Count Regulus Terentius, a proud and unpopular noble."
+keywords = ["bravil", "count", "regulus", "terentius"]
+known_by = "everyone"
+depth = "common"
+
+[[entry]]
+id = "bravil-lucky-old-lady"
+text = "The Lucky Old Lady is a statue in the middle of Bravil, of a poor woman who, the story goes, was blessed with great luck. Bravil folk touch it or pray to it for a bit of luck of their own, and some take it very seriously indeed."
+keywords = ["lucky old lady", "statue", "luck", "lucky", "blessing", "pray", "legend"]
+known_by = "locals:Bravil"
+depth = "common"
+
+[[entry]]
+id = "bravil-inns"
+text = "Bravil has two inns: Silverhome on the Water, kept by the High Elf Gilgondorin, and the Lonely Suitor Lodge, run by the Orc Bogrum gro-Galash. There's also a skooma den in the city, which decent folk stay out of."
+keywords = ["inn", "inns", "tavern", "room", "bed", "sleep", "drink", "ale", "food", "eat", "meal", "stay", "silverhome", "lonely suitor", "gilgondorin", "bogrum", "skooma", "den"]
+known_by = "locals:Bravil"
+depth = "common"
+
+[[entry]]
+id = "bravil-shops"
+text = "For trade in Bravil: the Fair Deal, a general store run by the High Elves Nilawen and Nordinor; the Archer's Paradox, the Wood Elf Daenlin's fletcher's shop for bows and arrows; and A Warlock's Luck, where Ungarion sells potions and spells. The Fighters Guild's smith does repairs, and horses are kept at the Bay Roan Stables outside the gate."
+keywords = ["shop", "shops", "store", "buy", "sell", "trade", "goods", "bow", "bows", "arrow", "arrows", "fletcher", "potion", "potions", "spell", "spells", "smith", "repair", "horse", "horses", "stables", "fair deal", "nilawen", "archer's paradox", "daenlin", "warlock's luck", "ungarion", "bay roan"]
+known_by = "locals:Bravil"
+depth = "common"
+
+[[entry]]
+id = "bravil-guilds"
+text = "Bravil has halls of the Fighters Guild and the Mages Guild, the latter led by the Argonian Kud-Ei, who looks after her mages fiercely. The Great Chapel of Mara, goddess of love and mercy, is the city's temple."
+keywords = ["guild", "guilds", "fighters guild", "mages guild", "kud-ei", "mage", "mages", "chapel", "temple", "mara", "priest", "heal", "healing", "pray"]
+known_by = "locals:Bravil"
+depth = "common"

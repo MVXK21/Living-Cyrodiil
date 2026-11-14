@@ -1,0 +1,87 @@
+# Made-up NPCs for testing without the game. In game, the plugin sends real
+# character sheets read live from the running game instead.
+# Fields match what the plugin sends: name, race, sex, class, location,
+# factions (name + rank), disposition (0-100), hour (0-24), interior, and
+# skills (only the notable ones here; unlisted skills count as 0).
+
+[[npc]]
+name = "Marcus Vellan"
+race = "Imperial"
+sex = "male"
+class = "Publican"
+location = "a tavern in Leyawiin"
+disposition = 55
+hour = 20
+interior = true
+skills = { Mercantile = 45, Speechcraft = 42, Blunt = 20, Alchemy = 12 }
+
+[[npc]]
+name = "Ri'shadra"
+race = "Khajiit"
+sex = "female"
+class = "Publican"
+location = "a tavern in Leyawiin"
+disposition = 60
+hour = 21
+interior = true
+skills = { Mercantile = 40, Speechcraft = 45, Acrobatics = 35, Security = 25 }
+
+[[npc]]
+name = "Walks-In-Reeds"
+race = "Argonian"
+sex = "male"
+class = "Commoner"
+location = "a tavern in Leyawiin"
+disposition = 45
+hour = 21
+interior = true
+skills = { Athletics = 30, "Hand to Hand" = 22, Sneak = 18 }
+
+[[npc]]
+name = "Grushnag gro-Bor"
+race = "Orc"
+sex = "male"
+class = "Guard"
+location = "the streets of Leyawiin"
+disposition = 40
+hour = 14
+interior = false
+factions = [{ name = "Leyawiin City Watch", rank = "Guard" }]
+skills = { Blade = 55, Block = 50, "Heavy Armor" = 48, Armorer = 30, Athletics = 35 }
+
+[[npc]]
+name = "Elisande Marchant"
+race = "Breton"
+sex = "female"
+class = "Mage"
+location = "the Mages Guild hall in Leyawiin"
+disposition = 65
+hour = 10
+interior = true
+factions = [{ name = "Mages Guild", rank = "Evoker" }]
+skills = { Destruction = 50, Alteration = 46, Mysticism = 42, Restoration = 38, Alchemy = 40 }
+
+# For the lore-depth test (Phase 2 step 7): a senior mage and a smith get the
+# same magic and smithing questions.
+[[npc]]
+name = "Raminus Polus"
+race = "Imperial"
+sex = "male"
+class = "Mage"
+location = "the Arcane University in the Imperial City"
+disposition = 60
+hour = 11
+interior = true
+factions = [{ name = "Mages Guild", rank = "Master Wizard" }]
+skills = { Mysticism = 80, Alteration = 72, Conjuration = 65, Restoration = 60, Illusion = 58, Destruction = 50, Alchemy = 55 }
+
+[[npc]]
+name = "Hammer-Hand Harald"
+race = "Nord"
+sex = "male"
+class = "Smith"
+location = "a smithy in Bruma"
+disposition = 50
+hour = 15
+interior = true
+skills = { Armorer = 78, Blunt = 52, "Heavy Armor" = 45, Mercantile = 38, Block = 30 }

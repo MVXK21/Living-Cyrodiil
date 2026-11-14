@@ -1,0 +1,107 @@
+# Cyrodiil's regions, roads and waters.
+# Adapted from UESP (https://en.uesp.net), CC BY-SA 2.5. Pages:
+# Lore:Cyrodiil, Lore:Great Forest, Lore:West Weald, Lore:Gold Coast,
+# Lore:Heartlands, Lore:Colovian Highlands, Lore:Jerall Mountains,
+# Lore:Nibenay Basin, Lore:Nibenay Valley, Lore:Blackwood, Lore:Valus Mountains,
+# Lore:Larsius River, Lore:Lake Rumare, Lore:Niben River, and the road pages
+# (Red Ring, Gold, Green, Yellow, Black, Orange, Silver, Blue) (fetched Nov 10, 2026).
+# Left out: older lore that pictures Cyrodiil as jungle (MVXK21, Nov 4: that's a
+# player's world knowledge choice, not the default).
+
+[[entry]]
+id = "cyrodiil-overview"
+text = "Cyrodiil is the heart of the Empire. West of the great Niben River lies Colovia, a land of hills, forests and plain-spoken folk; east of it lies Nibenay, older, richer and more given to ceremony. The Imperial City stands between them on Lake Rumare."
+keywords = ["cyrodiil", "province", "colovia", "colovian", "colovians", "nibenay", "nibenese", "niben", "east", "west", "land", "country"]
+known_by = "everyone"
+depth = "common"
+
+[[entry]]
+id = "region-heartlands"
+text = "The Heartlands are the gentle farmland and woods around Lake Rumare at the centre of Cyrodiil, crossed by the Red Ring Road and dotted with farms, old forts and Ayleid ruins."
+keywords = ["heartlands", "heartland", "centre", "center", "farmland", "lake rumare", "farms", "ruins"]
+known_by = "everyone"
+depth = "common"
+
+[[entry]]
+id = "region-great-forest"
+text = "The Great Forest is a great crescent of woodland around the Heartlands, from near Bravil round the west to the hills west of Cheydinhal. Chorrol lies at its western edge, and outside a few clearings it is wild country, home to bandits, wolves and worse."
+keywords = ["great forest", "forest", "woods", "woodland", "trees", "wild", "wilderness"]
+known_by = "everyone"
+depth = "common"
+
+[[entry]]
+id = "region-west-weald"
+text = "The West Weald is the warm, rolling country of southwestern Cyrodiil around Skingrad, all vineyards, farms and oak woods, crossed by the Gold Road."
+keywords = ["west weald", "weald", "vineyards", "vineyard", "skingrad", "south", "southwest"]
+known_by = "everyone"
+depth = "common"
+
+[[entry]]
+id = "region-gold-coast"
+text = "The Gold Coast is the dry, sunny coastland of far western Cyrodiil on the Abecean Sea, home to Anvil and Kvatch; it has long traded more with Hammerfell and the sea than with the rest of Cyrodiil."
+keywords = ["gold coast", "coast", "abecean", "sea", "anvil", "kvatch", "west", "hammerfell"]
+known_by = "everyone"
+depth = "common"
+
+[[entry]]
+id = "region-colovian-highlands"
+text = "The Colovian Highlands are the rugged hills and plateaus of western Cyrodiil, along the Hammerfell border beyond Chorrol and Skingrad: herders' country, with old forts and few roads."
+keywords = ["colovian highlands", "highlands", "hills", "plateau", "colovia", "hammerfell", "border", "west"]
+known_by = "everyone"
+depth = "common"
+
+[[entry]]
+id = "region-jerall-mountains"
+text = "The Jerall Mountains run along Cyrodiil's northern border with Skyrim: high, snowy and bitter cold, with Bruma the only city among them. The passes are dangerous in winter, and trolls and bears roam the heights."
+keywords = ["jerall", "mountains", "mountain", "snow", "cold", "north", "skyrim", "bruma", "pass", "passes", "trolls"]
+known_by = "everyone"
+depth = "common"
+
+[[entry]]
+id = "region-valus-mountains"
+text = "The Valus Mountains rise along Cyrodiil's eastern border with Morrowind, beyond Cheydinhal; the Blue Road climbs into their foothills toward the Morrowind border."
+keywords = ["valus", "mountains", "mountain", "east", "morrowind", "border", "cheydinhal"]
+known_by = "everyone"
+depth = "common"
+
+[[entry]]
+id = "region-nibenay"
+text = "The Nibenay Basin and Valley are the broad farm country of eastern Cyrodiil along the Niben River and its tributaries, from Lake Rumare down to Niben Bay; the Nibenese of these lands are known for their old customs, tattoos and love of ceremony."
+keywords = ["nibenay", "basin", "valley", "niben", "nibenese", "east", "farms", "tattoos", "customs"]
+known_by = "everyone"
+depth = "common"
+
+[[entry]]
+id = "region-blackwood"
+text = "Blackwood is the hot, swampy country of southern Cyrodiil around Leyawiin, where the Niben meets Topal Bay, bordering Black Marsh and Elsweyr; it's full of marshes, mudcrabs and Argonian and Khajiit folk."
+keywords = ["blackwood", "swamp", "swamps", "marsh", "marshes", "south", "leyawiin", "topal bay", "black marsh", "elsweyr", "hot"]
+known_by = "everyone"
+depth = "common"
+
+[[entry]]
+id = "lake-rumare"
+text = "Lake Rumare surrounds City Isle and the Imperial City. It's full of slaughterfish, so no one with sense swims in it, and Imperial folk say that wasting money is like \"throwing it into Lake Rumare\"."
+keywords = ["lake rumare", "lake", "rumare", "swim", "water", "slaughterfish", "fish", "fishing"]
+known_by = "everyone"
+depth = "common"
+
+[[entry]]
+id = "niben-river"
+text = "The Niben is Cyrodiil's great river, flowing from Lake Rumare south past Bravil to Niben Bay and on to Topal Bay at Leyawiin. Ships from the sea sail up it all the way to the Imperial City's Waterfront."
+keywords = ["niben", "river", "niben bay", "topal bay", "ships", "boat", "boats", "sail"]
+known_by = "everyone"
+depth = "common"
+
+[[entry]]
+id = "roads"
+text = "Cyrodiil's great roads, each called by a colour: the Red Ring Road circles Lake Rumare and joins the others; the Gold Road runs west through Skingrad and Kvatch to Anvil; the Black Road west to Chorrol; the Orange Road from Chorrol to Bruma; the Silver Road north to Bruma; the Blue Road east to Cheydinhal; and the Green and Yellow Roads south to Bravil and Leyawiin on either side of the Niben."
+keywords = ["road", "roads", "way", "route", "travel", "red ring", "gold road", "black road", "orange road", "silver road", "blue road", "green road", "yellow road", "how do i get", "get to", "directions", "which way"]
+known_by = "everyone"
+depth = "common"
+
+[[entry]]
+id = "roads-danger"
+text = "Travel between the cities is never quite safe: bandits and highwaymen work the roads, wolves and bears roam the woods, and the old forts and Ayleid ruins off the road are best avoided. The Legion patrols the main roads, but it can't be everywhere."
+keywords = ["dangerous", "danger", "safe", "bandit", "bandits", "highwayman", "highwaymen", "robbed", "road", "roads", "travel", "wolves", "patrol", "patrols", "legion"]
+known_by = "everyone"
+depth = "common"

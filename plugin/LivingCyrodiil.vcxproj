@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Living Cyrodiil xOBSE plugin. 32-bit only: Oblivion is a 32-bit game. -->
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6B1E2C4A-3F7D-4E51-9C0A-1D2E3F4A5B6C}</ProjectGuid>
+    <RootNamespace>LivingCyrodiil</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <!-- Where the xOBSE source (git submodule) lives -->
+    <XOBSE>$(MSBuildThisFileDirectory)..\external\xOBSE\</XOBSE>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <!-- Matches xOBSE itself (Visual Studio 2019 toolset) -->
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='Release'" Label="Configuration">
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup>
+    <TargetName>LivingCyrodiil</TargetName>
+    <OutDir>$(MSBuildThisFileDirectory)..\build\$(Configuration)\</OutDir>
+    <IntDir>$(MSBuildThisFileDirectory)..\build\obj\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(MSBuildThisFileDirectory)src;$(XOBSE);$(XOBSE)obse;$(XOBSE)obse\obse;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_USRDLL;OBLIVION_VERSION=0x010201A0;OBLIVION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ForcedIncludeFiles>obse_common/obse_prefix.h;StdAfx.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <Link>
+      <ModuleDefinitionFile>src\exports.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Debug'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Release'">
+    <ClCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectReference Include="$(XOBSE)common\common.vcxproj">
+      <Project>{20c6411c-596f-4b85-be4e-8bc91f59d8a6}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <!-- Our code -->
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\companion_link.cpp" />
+    <ClCompile Include="src\companion_launch.cpp" />
+    <ClCompile Include="src\json.cpp" />
+    <ClCompile Include="src\log.cpp" />
+    <ClCompile Include="src\notify.cpp" />
+    <ClCompile Include="src\plugin_settings.cpp" />
+    <ClCompile Include="src\npc_sheet.cpp" />
+    <ClCompile Include="src\speak.cpp" />
+    <ClCompile Include="src\file_watch.cpp" />
+    <ClCompile Include="src\esp_forms.cpp" />
+    <ClCompile Include="src\hold.cpp" />
+    <ClCompile Include="src\chatter.cpp" />
+    <ClCompile Include="src\awareness.cpp" />
+    <ClCompile Include="src\quests.cpp" />
+    <ClCompile Include="src\key_names.cpp" />
+    <ClCompile Include="src\vanilla_dialog.cpp" />
+    <ClCompile Include="src\type_box.cpp" />
+    <ClCompile Include="src\playthrough.cpp" />
+    <ClCompile Include="src\dllmain.c">
+      <ForcedIncludeFiles></ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="src\version.h" />
+    <ClInclude Include="src\companion_link.h" />
+    <ClInclude Include="src\companion_launch.h" />
+    <ClInclude Include="src\json.h" />
+    <ClInclude Include="src\log.h" />
+    <ClInclude Include="src\notify.h" />
+    <ClInclude Include="src\plugin_settings.h" />
+    <ClInclude Include="src\npc_sheet.h" />
+    <ClInclude Include="src\speak.h" />
+    <ClInclude Include="src\file_watch.h" />
+    <ClInclude Include="src\esp_forms.h" />
+    <ClInclude Include="src\hold.h" />
+    <ClInclude Include="src\chatter.h" />
+    <ClInclude Include="src\awareness.h" />
+    <ClInclude Include="src\quests.h" />
+    <ResourceCompile Include="src\LivingCyrodiil.rc" />
+    <ClInclude Include="src\key_names.h" />
+    <ClInclude Include="src\vanilla_dialog.h" />
+    <None Include="LivingCyrodiil.ini" />
+    <None Include="src\exports.def" />
+    <!-- xOBSE game-structure code, compiled into our DLL (same set as xOBSE's example plugin) -->
+    <ClCompile Include="$(XOBSE)obse\obse\GameActorValues.cpp" />
+    <ClCompile Include="$(XOBSE)obse\obse\GameAPI.cpp" />
+    <ClCompile Include="$(XOBSE)obse\obse\GameBSExtraData.cpp" />
+    <ClCompile Include="$(XOBSE)obse\obse\GameData.cpp" />
+    <ClCompile Include="$(XOBSE)obse\obse\GameExtraData.cpp" />
+    <ClCompile Include="$(XOBSE)obse\obse\GameForms.cpp" />
+    <ClCompile Include="$(XOBSE)obse\obse\GameMenus.cpp" />
+    <ClCompile Include="$(XOBSE)obse\obse\GameTiles.cpp" />
+    <ClCompile Include="$(XOBSE)obse\obse\GameObjects.cpp" />
+    <ClCompile Include="$(XOBSE)obse\obse\GameTasks.cpp" />
+    <ClCompile Include="$(XOBSE)obse\obse\GameTypes.cpp" />
+    <ClCompile Include="$(XOBSE)obse\obse\NiAPI.cpp" />
+    <ClCompile Include="$(XOBSE)obse\obse\NiNodes.cpp" />
+    <ClCompile Include="$(XOBSE)obse\obse\NiRTTI.cpp" />
+    <ClCompile Include="$(XOBSE)obse\obse\Script.cpp" />
+    <ClCompile Include="$(XOBSE)obse\obse\Utilities.cpp" />
+    <ClCompile Include="$(XOBSE)obse\obse_common\SafeWrite.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>

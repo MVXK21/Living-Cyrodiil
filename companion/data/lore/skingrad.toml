@@ -1,0 +1,69 @@
+# Skingrad, as it stands in 3E 433 at the start of the game.
+# Adapted from UESP (https://en.uesp.net), CC BY-SA 2.5. Pages:
+# Oblivion:Skingrad, Oblivion:Skingrad People, Lore:Skingrad (fetched Nov 10, 2026).
+# Left out: the Count's secret (only rumour that he's strange and reclusive),
+# Summitmist Manor, Glarthir's conspiracy and other quest spoilers.
+
+[[entry]]
+id = "skingrad-overview"
+text = "Skingrad is a Colovian city in the West Weald of southwestern Cyrodiil, on the Gold Road between the Imperial City and Kvatch. It's famous for its wines, above all the Surilie Brothers' vintages and Tamika's, grown in the vineyards around it, and for its tomatoes and cheese."
+keywords = ["skingrad", "city", "town", "west weald", "gold road", "wine", "wines", "vineyard", "vineyards", "surilie", "tamika", "tomato", "tomatoes", "cheese"]
+known_by = "everyone"
+depth = "common"
+
+[[entry]]
+id = "skingrad-local-summary"
+text = "You live in Skingrad, split into a northern district of shops and guild halls and a southern one of homes and the Great Chapel of Julianos, joined by two bridges. Castle Skingrad stands outside the walls on a hill above the city, and the vineyards around it make the best wine in Cyrodiil."
+keywords = ["skingrad", "city", "town", "here", "district", "districts", "bridge", "bridges", "news", "wine"]
+known_by = "locals:Skingrad"
+depth = "common"
+always = true
+
+[[entry]]
+id = "skingrad-ruler"
+text = "Count Janus Hassildor rules Skingrad from his castle on the hill, but he is a recluse and a wizard who is almost never seen, even by his own people; his Argonian steward, Hal-Liurz, speaks for him; she sees to the county's business. People whisper all kinds of things about him, but he keeps the city well run."
+keywords = ["count", "ruler", "rules", "janus", "hassildor", "castle", "recluse", "wizard", "steward", "hal-liurz", "court"]
+known_by = "locals:Skingrad"
+depth = "common"
+
+[[entry]]
+id = "skingrad-ruler-public"
+text = "Skingrad's ruler, Count Janus Hassildor, is said to be a powerful wizard and a recluse who almost never shows himself."
+keywords = ["skingrad", "count", "janus", "hassildor"]
+known_by = "everyone"
+depth = "common"
+
+[[entry]]
+id = "skingrad-inns"
+text = "Skingrad has two inns: the Two Sisters Lodge, run by the Orc Mog gra-Mogakh, and the West Weald Inn, kept by Erina Jeranus, where a High Elf alchemist named Sinderion lodges and works in the cellar."
+keywords = ["inn", "inns", "tavern", "room", "bed", "sleep", "drink", "ale", "wine", "food", "eat", "meal", "stay", "two sisters", "west weald inn", "mog", "erina", "sinderion"]
+known_by = "locals:Skingrad"
+depth = "common"
+
+[[entry]]
+id = "skingrad-shops"
+text = "For trade in Skingrad: Colovian Traders, Gunder's general store; Hammer and Tongs, where Agnete the Pickled sells and repairs arms and armour; and All Things Alchemical, the Dunmer Falanu Hlaalu's shop. Horses are kept at the Grateful Pass Stables by the west gate."
+keywords = ["shop", "shops", "store", "buy", "sell", "trade", "goods", "smith", "blacksmith", "weapon", "weapons", "armor", "armour", "repair", "alchemy", "alchemist", "potion", "potions", "horse", "horses", "stables", "colovian traders", "gunder", "hammer and tongs", "agnete", "falanu", "grateful pass"]
+known_by = "locals:Skingrad"
+depth = "common"
+
+[[entry]]
+id = "skingrad-guilds"
+text = "Skingrad has halls of both guilds in its northern district: the Mages Guild, led by Adrienne Berene, and the Fighters Guild. The Great Chapel of Julianos, god of wisdom and law, stands in the southern district."
+keywords = ["guild", "guilds", "fighters guild", "mages guild", "adrienne", "berene", "mage", "mages", "chapel", "temple", "julianos", "priest", "heal", "healing", "pray"]
+known_by = "locals:Skingrad"
+depth = "common"
+
+[[entry]]
+id = "skingrad-wine"
+text = "Skingrad's wine is the pride of the West Weald. The Surilie Brothers, Davide and Gaston, and the vintner Tamika have their vineyards just outside the city, and a good year's bottle fetches a fine price in the Imperial City."
+keywords = ["wine", "wines", "vintage", "vineyard", "vineyards", "surilie", "davide", "gaston", "tamika", "grapes", "drink"]
+known_by = "locals:Skingrad"
+depth = "common"
+
+[[entry]]
+id = "skingrad-houses"
+text = "Rosethorn Hall, the grandest house in Skingrad, is up for sale through the Count's steward, at a price only the rich could pay."
+keywords = ["house", "home", "property", "rosethorn", "buy", "sale", "manor"]
+known_by = "locals:Skingrad"
+depth = "common"

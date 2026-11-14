@@ -1,0 +1,62 @@
+# Bruma, as it stands in 3E 433 at the start of the game.
+# Adapted from UESP (https://en.uesp.net), CC BY-SA 2.5. Pages:
+# Oblivion:Bruma, Oblivion:Bruma People, Lore:Bruma (fetched Nov 10, 2026).
+# Left out: Cloud Ruler Temple (the Blades keep it secret), spies, fences and
+# Dark Brotherhood matters, the gates and the battle (3E 433, quest-gated).
+
+[[entry]]
+id = "bruma-overview"
+text = "Bruma is a cold mountain city in the Jerall Mountains of northern Cyrodiil, near the border with Skyrim, at the end of the Silver Road north of the Imperial City; the Orange Road runs southwest to Chorrol. It's snowbound much of the year, built in the Nordic style, and many of its people are Nords."
+keywords = ["bruma", "city", "town", "jerall", "mountains", "skyrim", "nord", "nords", "snow", "cold", "silver road", "orange road", "north"]
+known_by = "everyone"
+depth = "common"
+
+[[entry]]
+id = "bruma-local-summary"
+text = "You live in Bruma, high in the snowy Jerall Mountains, a hardy town of Nords and Imperials built of stone and timber against the cold. The Great Chapel of Talos stands at its heart and Castle Bruma, seat of Countess Narina Carvain, at its north end."
+keywords = ["bruma", "city", "town", "here", "news", "snow", "cold", "mountains"]
+known_by = "locals:Bruma"
+depth = "common"
+always = true
+
+[[entry]]
+id = "bruma-ruler"
+text = "Countess Narina Carvain rules Bruma from Castle Bruma. She is a Nibenese noblewoman, cool and proud, and not much loved by the town's Nords, though few doubt she cares for the city. Captain Burd commands the city guard."
+keywords = ["countess", "count", "ruler", "rules", "narina", "carvain", "castle", "court", "captain", "burd", "guard", "guards"]
+known_by = "locals:Bruma"
+depth = "common"
+
+[[entry]]
+id = "bruma-ruler-public"
+text = "Bruma is ruled by Countess Narina Carvain, a proud Nibenese noblewoman."
+keywords = ["bruma", "countess", "narina", "carvain"]
+known_by = "everyone"
+depth = "common"
+
+[[entry]]
+id = "bruma-inns"
+text = "Bruma has two inns: the Jerall View Inn, kept by the Nord Hafid Hollowleg, and Olav's Tap and Tack, a Nord's alehouse and stable-inn run by Olav, where the locals drink."
+keywords = ["inn", "inns", "tavern", "room", "bed", "sleep", "drink", "ale", "mead", "food", "eat", "meal", "stay", "jerall view", "olav", "tap and tack", "hafid"]
+known_by = "locals:Bruma"
+depth = "common"
+
+[[entry]]
+id = "bruma-shops"
+text = "For trade in Bruma: Hammer and Axe, Fjotreid's smithy; Nord Winds, where Olfand forges arms and armour and Skjorta sells clothes; and Novaroma, a general store run by the High Elves Karinnarre and Suurootan. Horses are kept at the Wildeye Stables outside the gate."
+keywords = ["shop", "shops", "store", "buy", "sell", "trade", "goods", "smith", "blacksmith", "weapon", "weapons", "armor", "armour", "repair", "clothes", "clothing", "furs", "horse", "horses", "stables", "hammer and axe", "fjotreid", "nord winds", "olfand", "skjorta", "novaroma", "karinnarre", "suurootan", "wildeye"]
+known_by = "locals:Bruma"
+depth = "common"
+
+[[entry]]
+id = "bruma-guilds"
+text = "Bruma has halls of the Fighters Guild and the Mages Guild; the Mages Guild hall is led by the Breton Jeanne Frasoric, who is said to run it carelessly. The Great Chapel of Talos, the youngest of the Nine and the founder of the Empire, is the town's temple."
+keywords = ["guild", "guilds", "fighters guild", "mages guild", "jeanne", "frasoric", "mage", "mages", "chapel", "temple", "talos", "priest", "heal", "healing", "pray"]
+known_by = "locals:Bruma"
+depth = "common"
+
+[[entry]]
+id = "bruma-nords"
+text = "Many of Bruma's Nords keep the old ways of Skyrim: they drink hard, trust plain speech and steel more than politics, and some still honour the old Nordic gods alongside the Nine."
+keywords = ["nord", "nords", "skyrim", "old ways", "gods", "custom", "customs", "mead", "drink", "people", "folk"]
+known_by = "locals:Bruma"
+depth = "common"

@@ -1,0 +1,13 @@
+# Living Cyrodiil companion (Python 3.14)
+openai>=3.0                    # OpenAI-compatible client, used for OpenRouter
+pytest>=8                      # automated tests
+
+# Speech-to-text (Phase 2 step 2): both run locally on the CPU
+numpy>=2
+sounddevice>=0.5               # microphone recording
+faster-whisper>=1.2            # Whisper engine (MIT)
+useful-moonshine-onnx>=20251121  # Moonshine engine (MIT)
+
+# Voices (Phase 3): Pocket TTS by Kyutai (MIT code), runs on the CPU. Pulls in
+# PyTorch; on Windows, PyPI's PyTorch is already the CPU build.
+pocket-tts>=4.0

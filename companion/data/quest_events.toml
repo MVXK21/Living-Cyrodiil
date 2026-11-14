@@ -1,0 +1,325 @@
+# Quest events: what NPCs learn as the player's quests change the world
+# (Phase 5 step 3b). The list, its triggers and who knows what were checked by
+# MVXK21 on Nov 9, 2026: docs/phase5-3b-events.md. Facts in our own words.
+#
+# trigger:   when the event has happened, from the plugin's live quest report:
+#              "global:KvatchDestroyed"  a global is set (non-zero)
+#              "MQ06>=100", "MQ16<10"    a quest's current stage
+#              "MQ11:done:40"            a stage done
+#              "Dark09:completed"        a quest completed
+#            joined with " and ". `ended`: the same, for when it stops being news.
+# who_first: who knows at once: "locals:<place>" (the NPC's location contains
+#            it), "faction:<name>", "class:<name>", or "everyone".
+#            Everyone else hears after `spread_days` (3, MVXK21), unless only = true.
+# about_player: the fact is about the traveller (a title NPCs recognise).
+# hides_fact: a fixed world fact (setting_vanilla.toml) this replaces, by a
+#            phrase in it, for NPCs who know of the event.
+
+spread_days = 3
+
+# ---- the main quest ------------------------------------------------------------
+
+[[event]]
+id = "M1-kvatch-destroyed"
+trigger = "global:KvatchDestroyed"
+fact = "Kvatch has been destroyed. Daedra came out of Oblivion Gates outside its walls one night and burned the city; only a few survivors escaped, and they're camped on the road below it."
+who_first = ["locals:Kvatch", "locals:Skingrad", "locals:Anvil", "faction:Imperial Legion", "faction:Blades", "class:Guard"]
+
+[[event]]
+id = "M2-hero-of-kvatch"
+trigger = "MS48>=90"
+fact = "A stranger went into the Oblivion Gate at Kvatch and closed it, saving the survivors; people call them the Hero of Kvatch."
+who_first = ["locals:Kvatch", "faction:Imperial Legion", "class:Guard"]
+
+[[event]]
+id = "M2-hero-of-kvatch-is-you"
+trigger = "MS48>=90"
+fact = "You recognise the traveller in front of you: this is the Hero of Kvatch, who closed the Oblivion Gate there."
+who_first = ["locals:Kvatch"]
+about_player = true
+
+[[event]]
+id = "M3-kvatch-retaken"
+trigger = "MS49:completed"
+fact = "Kvatch's castle has been taken back from the Daedra. Savlian Matius now leads the survivors, and they mean to rebuild."
+who_first = ["locals:Kvatch", "faction:Imperial Legion"]
+
+[[event]]
+id = "M4-talk-of-gates"
+trigger = "MQ03:completed"
+ended = "MQ06:completed"
+fact = "There's talk of more Oblivion Gates opening across Cyrodiil, like the one at Kvatch, though most folk hope it's only rumour."
+who_first = ["everyone"]
+
+[[event]]
+id = "M5-mythic-dawn"
+trigger = "MQ05:completed"
+fact = "Rumour says a cult called the Mythic Dawn murdered the Emperor and is behind the Oblivion Gates, though ordinary folk can't say if it's true."
+who_first = ["everyone"]
+
+[[event]]
+id = "M5-mythic-dawn-known"
+trigger = "MQ05:completed"
+fact = "The Mythic Dawn, a secret cult that worships Mehrunes Dagon, murdered the Emperor and his sons and is opening the Oblivion Gates."
+who_first = ["faction:Imperial Legion", "faction:Blades"]
+only = true
+
+[[event]]
+id = "M6-gates-everywhere"
+trigger = "MQ06:completed"
+ended = "MQ14>=50"
+fact = "Oblivion Gates have opened outside cities all across Cyrodiil, and Daedra raid the roads near them. The Legion is stretched thin, and every town fears it will go the way of Kvatch."
+who_first = ["everyone"]
+
+[[event]]
+id = "M7-bruma-gate-closed"
+trigger = "MQ10:completed"
+fact = "The Oblivion Gate near Bruma has been closed by Captain Burd and the Bruma guard."
+who_first = ["locals:Bruma"]
+
+[[event]]
+id = "M8-anvil-gate-closed"
+trigger = "MQ11:done:40"
+fact = "The Oblivion Gate outside Anvil has been closed."
+who_first = ["locals:Anvil"]
+[[event]]
+id = "M8-skingrad-gate-closed"
+trigger = "MQ11:done:41"
+fact = "The Oblivion Gate outside Skingrad has been closed."
+who_first = ["locals:Skingrad"]
+[[event]]
+id = "M8-chorrol-gate-closed"
+trigger = "MQ11:done:42"
+fact = "The Oblivion Gate outside Chorrol has been closed."
+who_first = ["locals:Chorrol"]
+[[event]]
+id = "M8-bravil-gate-closed"
+trigger = "MQ11:done:43"
+fact = "The Oblivion Gate outside Bravil has been closed."
+who_first = ["locals:Bravil"]
+[[event]]
+id = "M8-leyawiin-gate-closed"
+trigger = "MQ11:done:44"
+fact = "The Oblivion Gate outside Leyawiin has been closed."
+who_first = ["locals:Leyawiin"]
+[[event]]
+id = "M8-cheydinhal-gate-closed"
+trigger = "MQ11:done:45"
+fact = "The Oblivion Gate outside Cheydinhal has been closed."
+who_first = ["locals:Cheydinhal"]
+
+[[event]]
+id = "M9-anvil-sends-troops"
+trigger = "MQ11:done:21"
+fact = "The Countess has promised soldiers to help defend Bruma."
+who_first = ["locals:Anvil"]
+only = true
+[[event]]
+id = "M9-skingrad-sends-troops"
+trigger = "MQ11:done:23"
+fact = "The Count has promised soldiers to help defend Bruma."
+who_first = ["locals:Skingrad"]
+only = true
+[[event]]
+id = "M9-chorrol-sends-troops"
+trigger = "MQ11:done:25"
+fact = "The Countess has promised soldiers to help defend Bruma."
+who_first = ["locals:Chorrol"]
+only = true
+[[event]]
+id = "M9-bravil-sends-troops"
+trigger = "MQ11:done:27"
+fact = "The Count has promised soldiers to help defend Bruma."
+who_first = ["locals:Bravil"]
+only = true
+[[event]]
+id = "M9-leyawiin-sends-troops"
+trigger = "MQ11:done:29"
+fact = "The Count has promised soldiers to help defend Bruma."
+who_first = ["locals:Leyawiin"]
+only = true
+[[event]]
+id = "M9-cheydinhal-sends-troops"
+trigger = "MQ11:done:31"
+fact = "The Count has promised soldiers to help defend Bruma."
+who_first = ["locals:Cheydinhal"]
+only = true
+[[event]]
+id = "M9-kvatch-sends-troops"
+trigger = "MQ11:done:33"
+fact = "Savlian Matius has promised what soldiers Kvatch can spare to help defend Bruma."
+who_first = ["locals:Kvatch"]
+only = true
+[[event]]
+id = "M9-bruma-allies"
+trigger = "MQ11>=21"
+fact = "The Countess has sent to the other cities for soldiers to help defend Bruma from the Daedra."
+who_first = ["locals:Bruma"]
+only = true
+
+[[event]]
+id = "M10-battle-of-bruma"
+trigger = "MQ14>=50"
+fact = "The Battle of Bruma has been won: a Great Gate opened outside the city and was closed, and the Daedra's great siege engine was destroyed. The lost heir of Uriel Septim, Martin Septim, revealed himself there and rallied the defenders."
+who_first = ["locals:Bruma", "faction:Blades", "faction:Imperial Legion"]
+hides_fact = "Septim line seems to have ended"
+
+[[event]]
+id = "M11-martin-recognised"
+trigger = "MQ16>=14"
+fact = "The Elder Council has recognised Martin Septim as Uriel's heir; he is to light the Dragonfires and take the throne."
+who_first = ["locals:Imperial City", "faction:Blades"]
+
+[[event]]
+id = "M12-imperial-city-attacked"
+trigger = "MQ16>=20"
+ended = "MQ16:completed"
+fact = "Oblivion Gates have opened inside the Imperial City itself, and Daedra are in the streets; Mehrunes Dagon himself has been seen."
+who_first = ["locals:Imperial City"]
+
+[[event]]
+id = "M13-crisis-over"
+trigger = "MQ16:completed"
+fact = "The Oblivion Crisis is over. In the Temple of the One, Martin Septim became an avatar of Akatosh, a great dragon of fire, and cast Mehrunes Dagon back into Oblivion, giving his life to do it; the gates are gone. Now there's no Emperor and no heir, and the Elder Council rules under Chancellor Ocato. A great stone dragon stands in the ruined temple."
+who_first = ["locals:Imperial City", "faction:Blades", "faction:Imperial Legion"]
+hides_fact = "Septim line seems to have ended"
+
+[[event]]
+id = "M13-champion-of-cyrodiil"
+trigger = "MQ16:completed"
+fact = "You recognise the traveller: they stood with Martin Septim in the Temple of the One at the end of the crisis, and are hailed as the Champion of Cyrodiil."
+who_first = ["locals:Imperial City", "faction:Blades"]
+about_player = true
+
+# ---- the Fighters Guild ----------------------------------------------------------
+
+[[event]]
+id = "F1-blackwood-rising"
+trigger = "FGD01Default:completed"
+ended = "FGD09Hist:completed"
+fact = "The Fighters Guild is losing contracts and members to the Blackwood Company of Leyawiin, which works cheaper and takes any job."
+who_first = ["faction:Fighters Guild", "locals:Leyawiin"]
+
+[[event]]
+id = "F2-guild-falling-apart"
+trigger = "FGD06DeadViranus:completed"
+ended = "FGD09Hist:completed"
+fact = "Vilena Donton's son Viranus has been killed, and she has thrown Modryn Oreyn out of the Fighters Guild; the guild is falling apart."
+who_first = ["faction:Fighters Guild", "locals:Chorrol"]
+
+[[event]]
+id = "F3-blackwood-destroyed"
+trigger = "FGD09Hist:completed"
+fact = "The Blackwood Company has been destroyed. Its fighters were drugged on sap from a sickened Hist tree, which is why they fought like madmen. The Fighters Guild has a new master, and Modryn Oreyn is back."
+who_first = ["faction:Fighters Guild", "locals:Leyawiin", "locals:Chorrol"]
+
+# ---- the Mages Guild (MVXK21: members at once; only G3 and G5 reach everyone) -----
+
+[[event]]
+id = "G1-necromancer-attacks"
+trigger = "MG08MagesStaff:completed"
+fact = "Necromancers have attacked the Mages Guild and killed some of its members."
+who_first = ["faction:Mages Guild"]
+only = true
+
+[[event]]
+id = "G2-university-ambush"
+trigger = "MG12Gate:completed"
+fact = "A high-ranking member of the Mages Guild was killed in an ambush near the Arcane University."
+who_first = ["faction:Mages Guild"]
+only = true
+
+[[event]]
+id = "G3-bruma-hall-destroyed"
+trigger = "MG14Plot:completed"
+fact = "The Mages Guild hall in Bruma was destroyed by necromancers, and its mages were killed."
+who_first = ["faction:Mages Guild", "locals:Bruma"]
+
+[[event]]
+id = "G4-king-of-worms"
+trigger = "MG15Helm:completed"
+fact = "Mannimarco, the King of Worms, lord of the necromancers, is in Cyrodiil; the Council of Mages has broken apart, and Arch-Mage Traven stands alone."
+who_first = ["faction:Mages Guild"]
+only = true
+
+[[event]]
+id = "G5-mannimarco-dead"
+trigger = "MG18KingofWorms:completed"
+fact = "Mannimarco, the King of Worms, is dead, and the necromancers are broken. Arch-Mage Hannibal Traven gave his life in the struggle, and the Mages Guild has a new Arch-Mage."
+who_first = ["faction:Mages Guild"]
+
+# ---- the Thieves Guild (public only as Black Horse Courier headlines) -----------
+
+[[event]]
+id = "T1-taxes-stolen"
+trigger = "TG02taxes:completed"
+fact = "The Black Horse Courier says the Gray Fox stole the Imperial City's tax records from the Waterfront, so the poor there won't pay this year's taxes."
+who_first = ["locals:Imperial City", "faction:Thieves Guild"]
+
+[[event]]
+id = "T2-waterfront-raid"
+trigger = "TG05Misdirection:completed"
+fact = "The Black Horse Courier reports that the Imperial Watch raided the Waterfront looking for the Gray Fox, and came away with nothing."
+who_first = ["locals:Imperial City", "faction:Thieves Guild"]
+
+[[event]]
+id = "T3-lex-reassigned"
+trigger = "TG07Lex:completed"
+fact = "Captain Hieronymus Lex has been sent away to Anvil, and the Imperial City Watch has a new captain."
+who_first = ["locals:Imperial City", "locals:Anvil", "faction:Thieves Guild", "class:Guard"]
+
+[[event]]
+id = "T4-vampire-nest"
+trigger = "TG10Boots:completed"
+fact = "The Black Horse Courier reports a nest of vampires was found and cleared out in the city."
+who_first = ["locals:Imperial City", "faction:Thieves Guild"]
+
+[[event]]
+id = "T5-palace-break-in"
+trigger = "TG11Heist>=100"
+fact = "Someone broke into the Imperial Palace itself, the Black Horse Courier says; nobody's saying what was taken."
+who_first = ["locals:Imperial City", "faction:Thieves Guild"]
+
+[[event]]
+id = "T5-elder-scroll-stolen"
+trigger = "TG11Heist>=100"
+fact = "An Elder Scroll was stolen from the Imperial Palace, a theft without equal."
+who_first = ["faction:Thieves Guild"]
+only = true
+
+# ---- the Dark Brotherhood (public only as murders and "accidents") -------------
+
+[[event]]
+id = "D2-baenlin-accident"
+trigger = "Dark03Accidents:completed"
+fact = "Old Baenlin of Bruma was killed in a freak accident: the stuffed head over his chair fell on him."
+who_first = ["locals:Bruma"]
+
+[[event]]
+id = "D3-phillida-murdered"
+trigger = "Dark09Retirement>=20"
+fact = "Adamus Phillida, the retired Legion commander, has been murdered in Leyawiin."
+who_first = ["locals:Leyawiin", "faction:Imperial Legion", "class:Guard"]
+
+# ---- the Arena -------------------------------------------------------------------
+
+[[event]]
+id = "A1-new-champion"
+trigger = "ArenaDialogue>=40"
+ended = "ArenaDialogue>=50"
+fact = "The Arena has a new Champion, the last fighter left before the Grand Champion, the Gray Prince."
+who_first = ["locals:Imperial City"]
+
+[[event]]
+id = "A2-new-grand-champion"
+trigger = "ArenaDialogue>=50"
+fact = "The Gray Prince has been beaten! The Arena has a new Grand Champion."
+who_first = ["locals:Imperial City"]
+hides_fact = ""
+
+[[event]]
+id = "A2-grand-champion-is-you"
+trigger = "ArenaDialogue>=50"
+fact = "You recognise the traveller: this is the Arena's new Grand Champion, who beat the Gray Prince."
+who_first = ["locals:Imperial City"]
+about_player = true

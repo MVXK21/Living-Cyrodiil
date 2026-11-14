@@ -1,0 +1,93 @@
+# Leyawiin, as it stands in 3E 433 before any quests, plus its history.
+# Adapted from UESP (https://en.uesp.net), CC BY-SA 2.5. Pages:
+# Oblivion:Leyawiin, Oblivion:Leyawiin People, Lore:Leyawiin,
+# Oblivion:Castle Leyawiin, Oblivion:Leyawiin Mages Guild, Oblivion:Dagail,
+# Oblivion:Blackwood Company, Oblivion:Blackwood Company Hall (fetched Nov 4, 2026).
+# Left out: Fourth Era events, and the city's Oblivion siege (3E 433, quest-gated).
+
+[[entry]]
+id = "leyawiin-overview"
+text = "Leyawiin is a Nibenese city in far southern Cyrodiil, in the Blackwood region at the mouth of the Niben where it meets Topal Bay, at the end of the Green Road south of Bravil. The air is hot and damp, and many Khajiit and Argonians live there, Elsweyr and Black Marsh being so near."
+keywords = ["leyawiin", "city", "town", "blackwood", "niben", "topal bay", "green road", "weather", "swamp", "humid"]
+known_by = "everyone"
+depth = "common"
+
+[[entry]]
+id = "leyawiin-local-summary"
+text = "You live in Leyawiin, which is split into the Chapel District, the Guild Plaza, Main Street and Castle Leyawiin. The Great Chapel of Zenithar towers over the city, and local trouble comes from bandits and skooma dealers."
+keywords = ["leyawiin", "city", "town", "here", "district", "news", "trouble"]
+known_by = "locals:Leyawiin"
+depth = "common"
+always = true
+
+[[entry]]
+id = "leyawiin-rulers"
+text = "Count Marius Caro rules Leyawiin from Castle Leyawiin, as House Caro has since the days of the Second Empire. He is newly wed to Countess Alessia Caro, daughter of the Countess of Chorrol."
+keywords = ["count", "countess", "caro", "marius", "alessia", "castle", "ruler", "rules", "lord"]
+known_by = "locals:Leyawiin"
+depth = "common"
+
+[[entry]]
+id = "leyawiin-count-reputation"
+text = "Count Marius Caro wants Leyawiin to be a proper Imperial city and leans on its Khajiit and Argonian folk to follow Imperial ways. Some Khajiit blame him for driving their people off the fertile land of the county."
+keywords = ["count", "caro", "marius", "khajiit", "argonian", "argonians", "imperial", "unfair", "politics"]
+known_by = "locals:Leyawiin"
+depth = "common"
+
+[[entry]]
+id = "leyawiin-inns"
+text = "Leyawiin has two inns: the Three Sisters' Inn, run by the Khajiit sisters Shamada, Shomara and Shuravi, and the Five Claws Lodge, kept by the Argonian Witseidutsei."
+keywords = ["inn", "inns", "tavern", "room", "bed", "drink", "ale", "meal", "food", "eat", "three sisters", "five claws", "lodge", "stay"]
+known_by = "locals:Leyawiin"
+depth = "common"
+
+[[entry]]
+id = "leyawiin-shops"
+text = "For trade in Leyawiin there is Best Goods and Guarantees for general goods, Southern Books, run by the Orc Bugak gro-Bol, The Dividing Line, where the Argonian smith Tun-Zeeus sells arms and armour and does repairs, and the Five Riders Stables for horses."
+keywords = ["shop", "shops", "store", "buy", "sell", "trade", "merchant", "smith", "blacksmith", "weapon", "weapons", "armor", "armour", "repair", "books", "book", "horse", "stables", "goods"]
+known_by = "locals:Leyawiin"
+depth = "common"
+
+[[entry]]
+id = "leyawiin-guilds"
+text = "Leyawiin has halls of the Fighters Guild and the Mages Guild, and the Great Chapel of Zenithar, where priests heal and sell Restoration spells. The Mages Guild hall is led by Dagail, a Wood Elf battlemage and master of Mysticism, known for her cryptic premonitions."
+keywords = ["guild", "guilds", "mages guild", "fighters guild", "chapel", "temple", "zenithar", "priest", "healer", "dagail", "mage", "mages"]
+known_by = "locals:Leyawiin"
+depth = "common"
+
+[[entry]]
+id = "blackwood-company"
+text = "The Blackwood Company is a mercenary company based in Leyawiin, across the street from the Fighters Guild hall. It takes jobs the Guild won't, undercuts its prices, and has grown past a hundred members; it began with former soldiers who failed to win back land in Black Marsh for the Emperor."
+keywords = ["blackwood", "company", "mercenary", "mercenaries", "fighters guild", "sellsword", "sellswords", "work", "job", "jobs"]
+known_by = "locals:Leyawiin"
+depth = "common"
+
+[[entry]]
+id = "blackwood-company-wider"
+text = "Word has spread that a Leyawiin mercenary outfit, the Blackwood Company, is cheaper than the Fighters Guild and less particular about the work it takes."
+keywords = ["blackwood", "company", "mercenary", "mercenaries", "fighters guild"]
+known_by = "everyone"
+depth = "specialist"
+area = "combat"
+
+[[entry]]
+id = "leyawiin-symbols"
+text = "Leyawiin's ancient emblem is a white horse on green, the Ivory Horse or White Stallion; some say it recalls the hero Pelinal Whitestrake. Topal the Pilot is the city's patron saint, and his statue stands by the southwest wall."
+keywords = ["horse", "stallion", "ivory", "white", "symbol", "banner", "crest", "topal", "pilot", "statue", "saint", "pelinal"]
+known_by = "locals:Leyawiin"
+depth = "common"
+
+[[entry]]
+id = "leyawiin-trans-niben"
+text = "Late in the Third Era the Trans-Niben, the strip of land between Elsweyr and Black Marsh, was handed back to Cyrodiil and County Leyawiin under an agreement between the Mane and the Empire. Khajiiti raiders calling themselves the Renrijra Krin reject it and say the land belongs to Elsweyr. Tensions also run between the Khajiit and newly arrived Argonians and Dunmer."
+keywords = ["trans-niben", "elsweyr", "mane", "renrijra", "krin", "khajiit", "argonian", "argonians", "dunmer", "border", "land", "bandits", "raiders", "tension"]
+known_by = "locals:Leyawiin"
+depth = "specialist"
+
+[[entry]]
+id = "leyawiin-history"
+text = "Legend says a messenger carried the Mace of the Crusader to Leyawiin after Pelinal Whitestrake died, and the master craftsman Saint Kaladas later raised the Great Chapel of Zenithar in tribute. Khajiiti wander-kings once held the city in the First Era. In the Second Era the Chamber of Legates blocked an Imperial plan to remove the city's bridges, which is why large ships still unload south of the city."
+keywords = ["history", "old", "ancient", "founded", "pelinal", "crusader", "mace", "kaladas", "chapel", "bridges", "bridge", "ships", "legates", "first era", "second era"]
+known_by = "locals:Leyawiin"
+depth = "scholar"
+area = "history"

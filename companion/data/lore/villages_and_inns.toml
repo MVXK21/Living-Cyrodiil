@@ -1,0 +1,186 @@
+# Villages, priories and roadside inns, as they stand in 3E 433 at the start
+# of the game. Adapted from UESP (https://en.uesp.net), CC BY-SA 2.5. Pages:
+# Oblivion:Aleswell, Oblivion:Bleaker's Way, Oblivion:Border Watch,
+# Oblivion:Brindle Home, Oblivion:Cropsford, Oblivion:Hackdirt,
+# Oblivion:Harlun's Watch, Oblivion:Pell's Gate, Oblivion:Water's Edge,
+# Oblivion:Weye, Oblivion:Weynon Priory, Oblivion:Gottlesfont Priory,
+# Oblivion:Inns and each inn's page (fetched Nov 10, 2026).
+# Locals are matched by the place name the companion gives them from the
+# game's map markers (places.py), or the inn's own name indoors.
+# Left out: the truth behind each village's trouble (quest spoilers),
+# Cloud Ruler Temple (secret), and the Blackwood Company's later raid.
+
+[[entry]]
+id = "roadside-inns"
+text = "Inns along Cyrodiil's roads: the Wawnet Inn at Weye and the Roxey Inn northeast of the Imperial City; the Faregyl Inn and the Inn of Ill Omen on the roads south of the capital; the Sleeping Mare at Pell's Gate; the Imperial Bridge Inn east of Bravil; the Drunken Dragon Inn northeast of Leyawiin; the Brina Cross Inn north of Anvil; the Gottshaw Inn west of Kvatch; and the Goodwill Inn at Bleaker's Way, south of Bruma."
+keywords = ["inn", "inns", "tavern", "road", "roads", "travel", "travelling", "traveling", "stay", "bed", "rest", "wawnet", "roxey", "faregyl", "ill omen", "sleeping mare", "imperial bridge", "drunken dragon", "brina cross", "gottshaw", "goodwill", "on the way", "between"]
+known_by = "everyone"
+depth = "common"
+
+# ---- villages ----------------------------------------------------------------
+
+[[entry]]
+id = "weye"
+text = "Weye is a small village on the mainland at the western end of the Talos Bridge, by the Imperial City, little more than a house, the Wawnet Inn and the Chestnut Handy Stables nearby. Travellers to and from the capital stop there."
+keywords = ["weye", "village", "talos bridge", "wawnet", "chestnut handy"]
+known_by = "everyone"
+depth = "common"
+
+[[entry]]
+id = "weye-local"
+text = "You're at Weye, the little village by the Talos Bridge across from the Imperial City. The Wawnet Inn is the heart of it, and the Chestnut Handy Stables are just east along the shore."
+keywords = ["weye", "here", "village", "wawnet", "inn"]
+known_by = "locals:Weye"
+depth = "common"
+always = true
+
+[[entry]]
+id = "pells-gate"
+text = "Pell's Gate is a hamlet south of the Imperial City, on the road to Bravil, with an inn called the Sleeping Mare."
+keywords = ["pell's gate", "pells gate", "village", "hamlet", "sleeping mare"]
+known_by = "everyone"
+depth = "common"
+
+[[entry]]
+id = "aleswell"
+text = "Aleswell is a village with an inn north of the Imperial City. People say something strange has happened there: the villagers have vanished, or turned to ghosts, and passing travellers hear voices with no one to be seen."
+keywords = ["aleswell", "village", "ghost", "ghosts", "haunted", "vanished", "invisible", "voices"]
+known_by = "everyone"
+depth = "common"
+
+[[entry]]
+id = "bleakers-way"
+text = "Bleaker's Way is a village on the Silver Road south of Bruma, named after Ulf the Bleaker, its first settler. Two families, the Nord Ulfgars and the Dunmer Dalvilus, have shared it for generations, and its Goodwill Inn gives travellers a bed for free."
+keywords = ["bleaker's way", "bleakers way", "village", "silver road", "ulfgar", "dalvilu", "goodwill", "inn", "free"]
+known_by = "everyone"
+depth = "common"
+
+[[entry]]
+id = "border-watch"
+text = "Border Watch is a Khajiit village north of Leyawiin, near the Elsweyr border. Its people are deeply superstitious and talk about a prophecy, and its inn is famous for its cheeses."
+keywords = ["border watch", "village", "khajiit", "prophecy", "superstitious", "cheese", "cheeses", "inn", "elsweyr"]
+known_by = "everyone"
+depth = "common"
+
+[[entry]]
+id = "brindle-home"
+text = "Brindle Home is a small farming village north of Skingrad, with a few houses and a horse pen."
+keywords = ["brindle home", "village", "farm", "farms", "horses"]
+known_by = "everyone"
+depth = "common"
+
+[[entry]]
+id = "cropsford"
+text = "Cropsford, a village southeast of the Imperial City, was all but destroyed when two goblin tribes went to war around it; its people are trying to rebuild."
+keywords = ["cropsford", "village", "goblin", "goblins", "destroyed", "war", "rebuild"]
+known_by = "everyone"
+depth = "common"
+
+[[entry]]
+id = "hackdirt"
+text = "Hackdirt is a poor mining village south of Chorrol, partly burned down long ago by the Legion. Its folk are strange and clannish, they keep to themselves and their chapel, and they don't like outsiders at all."
+keywords = ["hackdirt", "village", "mining", "mine", "strange", "outsiders", "chapel", "brethren"]
+known_by = "everyone"
+depth = "common"
+
+[[entry]]
+id = "harluns-watch"
+text = "Harlun's Watch is a small farming village south of Cheydinhal. Lately the villagers have seen strange lights from a cave nearby, and some who went to look never came back."
+keywords = ["harlun's watch", "harluns watch", "village", "lights", "cave", "missing", "farm"]
+known_by = "everyone"
+depth = "common"
+
+[[entry]]
+id = "waters-edge"
+text = "Water's Edge is a quiet farming village on the river north of Leyawiin, a few houses, gardens and sheep."
+keywords = ["water's edge", "waters edge", "village", "farm", "river", "sheep"]
+known_by = "everyone"
+depth = "common"
+
+[[entry]]
+id = "weynon-priory"
+text = "Weynon Priory is a quiet house of monks of Akatosh just east of Chorrol, with a chapel, a farm and a stable. Prior Maborel leads the brothers, and old Brother Jauffre is said to be a learned man."
+keywords = ["weynon", "priory", "monk", "monks", "akatosh", "maborel", "jauffre", "chorrol"]
+known_by = "everyone"
+depth = "common"
+
+[[entry]]
+id = "gottlesfont-priory"
+text = "Gottlesfont Priory, on the road between Chorrol and Skingrad, is kept by sisters who give any traveller a free bed and a meal."
+keywords = ["gottlesfont", "priory", "sisters", "free", "bed", "meal", "chorrol", "skingrad"]
+known_by = "everyone"
+depth = "common"
+
+# ---- the inns, for the people who work and stay in them ---------------------
+
+[[entry]]
+id = "wawnet-inn-local"
+text = "You're at the Wawnet Inn in Weye, by the Talos Bridge, kept by Nerussa. Travellers to the Imperial City stop here for a meal and a bed."
+keywords = ["inn", "here", "wawnet", "weye", "nerussa", "room", "bed", "food", "drink"]
+known_by = "locals:Wawnet Inn"
+depth = "common"
+always = true
+
+[[entry]]
+id = "roxey-inn-local"
+text = "You're at the Roxey Inn, on the road northeast of the Imperial City along Lake Rumare, kept by Malene."
+keywords = ["inn", "here", "roxey", "malene", "room", "bed", "food", "drink"]
+known_by = "locals:Roxey Inn"
+depth = "common"
+always = true
+
+[[entry]]
+id = "faregyl-inn-local"
+text = "You're at the Faregyl Inn, on the road south of the Imperial City, kept by the Khajiit Abhuki."
+keywords = ["inn", "here", "faregyl", "abhuki", "room", "bed", "food", "drink"]
+known_by = "locals:Faregyl Inn"
+depth = "common"
+always = true
+
+[[entry]]
+id = "inn-of-ill-omen-local"
+text = "You're at the Inn of Ill Omen, a lonely inn on the road south of the Imperial City kept by the Nord Manheim Maulhand. Its name puts some travellers off, and it gets odd guests."
+keywords = ["inn", "here", "ill omen", "manheim", "maulhand", "room", "bed", "food", "drink"]
+known_by = "locals:Inn of Ill Omen"
+depth = "common"
+always = true
+
+[[entry]]
+id = "imperial-bridge-inn-local"
+text = "You're at the Imperial Bridge Inn, east of Bravil where the road crosses the river, kept by the Dunmer Davela Hlaren."
+keywords = ["inn", "here", "imperial bridge", "davela", "room", "bed", "food", "drink"]
+known_by = "locals:Imperial Bridge Inn"
+depth = "common"
+always = true
+
+[[entry]]
+id = "drunken-dragon-inn-local"
+text = "You're at the Drunken Dragon Inn, on the road northeast of Leyawiin, kept by Andreas Draconis."
+keywords = ["inn", "here", "drunken dragon", "andreas", "draconis", "room", "bed", "food", "drink"]
+known_by = "locals:Drunken Dragon Inn"
+depth = "common"
+always = true
+
+[[entry]]
+id = "brina-cross-inn-local"
+text = "You're at the Brina Cross Inn, on the road north of Anvil, kept by Christophe Marane."
+keywords = ["inn", "here", "brina cross", "christophe", "marane", "room", "bed", "food", "drink"]
+known_by = "locals:Brina Cross Inn"
+depth = "common"
+always = true
+
+[[entry]]
+id = "gottshaw-inn-local"
+text = "You're at the Gottshaw Inn, on the Gold Road west of Kvatch, kept by Foroch."
+keywords = ["inn", "here", "gottshaw", "foroch", "room", "bed", "food", "drink"]
+known_by = "locals:Gottshaw Inn"
+depth = "common"
+always = true
+
+[[entry]]
+id = "goodwill-inn-local"
+text = "You're at the Goodwill Inn in Bleaker's Way, south of Bruma, kept by Kirsten. True to its name, a bed here costs a traveller nothing."
+keywords = ["inn", "here", "goodwill", "bleaker's way", "kirsten", "room", "bed", "free", "food", "drink"]
+known_by = "locals:Goodwill Inn"
+depth = "common"
+always = true

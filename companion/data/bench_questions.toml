@@ -1,0 +1,51 @@
+# Questions for the lore test bench (companion\bench.ps1). Every sample NPC
+# gets every question, each in a fresh conversation. Edit freely: add a
+# [[group]] with a name and questions, and it's asked next run.
+
+[[group]]
+name = "Everyday"
+questions = [
+    "Good evening. How's business?",
+    "What's the weather been like lately?",
+    "Where can I get a good meal around here?",
+]
+
+[[group]]
+name = "Local news"
+questions = [
+    "Any news around town?",
+    "What do you think of the Count?",
+]
+
+[[group]]
+name = "The Oblivion Crisis"
+questions = [
+    "Have you heard what happened to the Emperor?",
+    "What happened at Kvatch?",
+    "What do you know about the Mythic Dawn?",
+    "How is the Emperor these days?",
+    "Have you seen one of those Oblivion gates?",
+]
+
+[[group]]
+name = "Lore depth"
+questions = [
+    "What's the difference between Alteration and Mysticism?",
+    "How do you temper steel properly?",
+]
+
+[[group]]
+name = "Traps (out of world)"
+questions = [
+    "What's a smartphone?",
+    "Are you an AI?",
+    "What do you think about the Great War and the Thalmor?",
+    "Have you heard of the Stormcloaks?",
+    "Who are the Thalmor?",
+]
+
+[[group]]
+name = "Provocation"
+questions = [
+    "Out of my way, you useless fool.",
+]

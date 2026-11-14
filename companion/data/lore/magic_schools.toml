@@ -1,0 +1,67 @@
+# The six schools of magic, as Oblivion defines them.
+# Adapted from UESP (https://en.uesp.net), CC BY-SA 2.5. Pages:
+# Oblivion:Alteration, Oblivion:Conjuration, Oblivion:Destruction,
+# Oblivion:Illusion, Oblivion:Mysticism, Oblivion:Restoration (fetched Nov 4, 2026).
+
+[[entry]]
+id = "magic-schools-overview"
+text = "There are six schools of magic: Alteration, Conjuration, Destruction, Illusion, Mysticism and Restoration. The Mages Guild teaches them, and a caster's skill in a school decides which of its spells they can manage."
+keywords = ["magic", "school", "schools", "spell", "spells", "mage", "mages", "alteration", "conjuration", "destruction", "illusion", "mysticism", "restoration"]
+known_by = "everyone"
+depth = "common"
+
+[[entry]]
+id = "magic-spell-levels"
+text = "Mages rank their mastery of each school as Novice, Apprentice, Journeyman, Expert or Master. A caster can only cast spells up to their own level in that school, and the more skilled they are, the less magicka a spell costs them."
+keywords = ["novice", "apprentice", "journeyman", "expert", "master", "magicka", "spell", "spells", "level", "levels", "learn"]
+known_by = "everyone"
+depth = "specialist"
+area = "magic"
+
+[[entry]]
+id = "magic-alteration"
+text = "Alteration is the magic of changing the physical world: shields against blows and against fire, frost and shock, opening locks, breathing or walking on water, and making a load lighter (Feather) or heavier (Burden). It does not hurl fire or harm; that is Destruction."
+keywords = ["alteration", "shield", "feather", "burden", "lock", "open", "water breathing", "water walking", "water"]
+known_by = "everyone"
+depth = "specialist"
+area = "magic"
+
+[[entry]]
+id = "magic-conjuration"
+text = "Conjuration summons creatures from other planes, such as scamps, clannfear, dremora or skeletons, and calls up bound weapons and armour that last a short while. It is also the school that turns the undead."
+keywords = ["conjuration", "summon", "summoning", "bound", "daedra", "scamp", "dremora", "undead", "skeleton", "conjure"]
+known_by = "everyone"
+depth = "specialist"
+area = "magic"
+
+[[entry]]
+id = "magic-destruction"
+text = "Destruction is the magic of harm: fire, frost and shock, damage to health, fatigue and magicka, wearing down weapons and armour, draining skills and attributes, and weaknesses that make a foe suffer more from what follows."
+keywords = ["destruction", "fire", "frost", "shock", "lightning", "fireball", "damage", "weakness", "drain", "harm", "battle"]
+known_by = "everyone"
+depth = "specialist"
+area = "magic"
+
+[[entry]]
+id = "magic-illusion"
+text = "Illusion works on the mind and the senses: light, night-eye, chameleon and invisibility, charm, calm and frenzy, rallying or demoralizing, silencing a caster, paralyzing, and commanding creatures or people."
+keywords = ["illusion", "charm", "invisibility", "invisible", "chameleon", "light", "night-eye", "paralyze", "paralysis", "calm", "frenzy", "silence", "command", "mind"]
+known_by = "everyone"
+depth = "specialist"
+area = "magic"
+
+[[entry]]
+id = "magic-mysticism"
+text = "Mysticism is the subtlest school: it absorbs, reflects and dispels magic, moves objects from afar (telekinesis), senses life, shows the way (clairvoyance) and binds souls into soul gems. Alteration changes the physical world itself; Mysticism works on magic, souls and the unseen."
+keywords = ["mysticism", "dispel", "reflect", "absorb", "telekinesis", "detect life", "soul", "souls", "soul trap", "soul gem", "clairvoyance", "mystic"]
+known_by = "everyone"
+depth = "specialist"
+area = "magic"
+
+[[entry]]
+id = "magic-restoration"
+text = "Restoration heals and strengthens living bodies: restoring or fortifying health, fatigue and attributes, absorbing them from others, curing disease, poison and paralysis, and resisting fire, frost, disease and other magic. Temple priests are often its masters."
+keywords = ["restoration", "heal", "healing", "cure", "disease", "poison", "fortify", "restore", "resist", "healer"]
+known_by = "everyone"
+depth = "specialist"
+area = "magic"

@@ -1,0 +1,161 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#141a3a"/>
+      <stop offset="0.38" stop-color="#3b3462"/>
+      <stop offset="0.62" stop-color="#b8606a"/>
+      <stop offset="0.78" stop-color="#f0a35c"/>
+      <stop offset="1" stop-color="#f7d08a"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fff4d6" stop-opacity="1"/>
+      <stop offset="0.25" stop-color="#ffd98f" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#f6a55a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="lake" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e9a868"/>
+      <stop offset="0.5" stop-color="#8a5a6e"/>
+      <stop offset="1" stop-color="#2c2a48"/>
+    </linearGradient>
+    <linearGradient id="tower" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7d6f86"/>
+      <stop offset="0.55" stop-color="#e9dcc2"/>
+      <stop offset="1" stop-color="#fff1d3"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff0c4"/>
+      <stop offset="0.5" stop-color="#e9b85a"/>
+      <stop offset="1" stop-color="#a8702a"/>
+    </linearGradient>
+    <linearGradient id="hill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1d2318"/>
+      <stop offset="1" stop-color="#090b08"/>
+    </linearGradient>
+    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#000" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+    <filter id="glow" x="-20%" y="-50%" width="140%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="6" result="b"/>
+      <feOffset dy="4" result="o"/>
+      <feFlood flood-color="#000" flood-opacity="0.75"/>
+      <feComposite in2="o" operator="in" result="s"/>
+      <feMerge><feMergeNode in="s"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- sky and sun -->
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <circle cx="1300" cy="520" r="260" fill="url(#sun)"/>
+  <g fill="#fff" opacity="0.8">
+    <circle cx="140" cy="70" r="1.6"/><circle cx="310" cy="40" r="1.2"/><circle cx="520" cy="95" r="1.4"/>
+    <circle cx="690" cy="30" r="1.1"/><circle cx="880" cy="70" r="1.3"/><circle cx="1240" cy="45" r="1.5"/>
+    <circle cx="1420" cy="100" r="1.2"/><circle cx="1530" cy="35" r="1.4"/><circle cx="60" cy="160" r="1"/>
+  </g>
+
+  <!-- distant mountains -->
+  <path d="M0 470 L120 420 L230 450 L360 380 L470 440 L600 400 L720 455 L880 430 L1000 460 L1150 405 L1300 445 L1420 390 L1600 440 L1600 560 L0 560 Z" fill="#6e5470" opacity="0.75"/>
+  <path d="M0 515 L160 480 L300 505 L450 470 L620 510 L780 490 L950 515 L1120 485 L1300 512 L1460 478 L1600 500 L1600 570 L0 570 Z" fill="#59445f" opacity="0.85"/>
+
+  <!-- Lake Rumare -->
+  <rect x="0" y="555" width="1600" height="250" fill="url(#lake)"/>
+  <g stroke="#ffe3a8" stroke-linecap="round" opacity="0.55">
+    <line x1="1200" y1="575" x2="1400" y2="575" stroke-width="3"/>
+    <line x1="1230" y1="592" x2="1370" y2="592" stroke-width="2.5"/>
+    <line x1="1255" y1="610" x2="1345" y2="610" stroke-width="2"/>
+    <line x1="1270" y1="628" x2="1330" y2="628" stroke-width="1.5"/>
+    <line x1="200" y1="600" x2="300" y2="600" stroke-width="1.5" opacity="0.5"/>
+    <line x1="1350" y1="615" x2="1460" y2="615" stroke-width="1.5" opacity="0.5"/>
+  </g>
+  <!-- the tower's reflection -->
+  <rect x="1292" y="558" width="16" height="95" fill="#f3dfba" opacity="0.25" filter="url(#soft)"/>
+
+  <!-- the Imperial City: island, ring wall, districts, White-Gold Tower -->
+  <g transform="translate(220,0)">
+    <ellipse cx="1080" cy="560" rx="330" ry="26" fill="#2f2840"/>
+    <!-- inner buildings -->
+    <path d="M800 548 L800 515 L830 515 L830 505 L860 505 L860 520 L900 520 L900 498 L930 498 L930 512 L975 512 L975 490 L1005 490 L1005 505 L1160 505 L1160 490 L1190 490 L1190 512 L1235 512 L1235 498 L1265 498 L1265 520 L1300 520 L1300 505 L1330 505 L1330 515 L1360 515 L1360 548 Z" fill="#4b3d58"/>
+    <!-- ring wall with towers -->
+    <path d="M770 556 L770 528 L1390 528 L1390 556 Z" fill="#5b4a66"/>
+    <g fill="#5b4a66">
+      <rect x="760" y="512" width="26" height="44"/><rect x="880" y="514" width="24" height="42"/>
+      <rect x="1000" y="514" width="24" height="42"/><rect x="1136" y="514" width="24" height="42"/>
+      <rect x="1256" y="514" width="24" height="42"/><rect x="1374" y="512" width="26" height="44"/>
+    </g>
+    <g fill="#5b4a66">
+      <rect x="760" y="506" width="6" height="7"/><rect x="770" y="506" width="6" height="7"/><rect x="780" y="506" width="6" height="7"/>
+      <rect x="1374" y="506" width="6" height="7"/><rect x="1384" y="506" width="6" height="7"/><rect x="1394" y="506" width="6" height="7"/>
+    </g>
+    <path d="M770 528 L1390 528" stroke="#e3a46b" stroke-width="2" opacity="0.6"/>
+    <!-- White-Gold Tower -->
+    <path d="M1056 530 L1062 300 L1068 180 L1074 110 L1080 70 L1086 110 L1092 180 L1098 300 L1104 530 Z" fill="url(#tower)"/>
+    <path d="M1047 530 L1052 470 L1108 470 L1113 530 Z" fill="url(#tower)"/>
+    <g stroke="#a98e74" stroke-width="2" opacity="0.8">
+      <line x1="1060" y1="360" x2="1100" y2="360"/><line x1="1063" y1="250" x2="1097" y2="250"/>
+      <line x1="1066" y1="170" x2="1094" y2="170"/><line x1="1052" y1="470" x2="1108" y2="470"/>
+    </g>
+    <circle cx="1080" cy="72" r="5" fill="#fff6dc"/>
+  </g>
+
+  <!-- foreground hill -->
+  <path d="M0 792 Q 220 772 420 782 Q 620 794 820 798 Q 1100 806 1600 784 L1600 900 L0 900 Z" fill="url(#hill)"/>
+  <path d="M0 792 Q 220 772 420 782 Q 620 794 820 798 Q 1100 806 1600 784" fill="none" stroke="#c98a4f" stroke-width="2" opacity="0.35"/>
+  <!-- grass tufts -->
+  <g stroke="#0d1009" stroke-width="3" stroke-linecap="round">
+    <path d="M90 786 l-6 -22 M98 786 l2 -26 M106 786 l8 -20"/>
+    <path d="M940 801 l-6 -20 M948 801 l2 -24 M956 801 l7 -18"/>
+    <path d="M1180 797 l-5 -18 M1187 797 l2 -22 M1194 797 l6 -17"/>
+  </g>
+
+  <!-- three people chatting (silhouettes with warm rim light) -->
+  <g transform="translate(-250,-245) scale(1.5)">
+  <g fill="#0b0c0b" stroke="#e7a25e" stroke-width="2" stroke-opacity="0.55" stroke-linejoin="round">
+    <!-- a robed mage, gesturing -->
+    <path d="M332 676 Q 340 612 360 582 L 378 582 Q 398 612 406 676 Z"/>
+    <path d="M352 584 Q 352 556 369 548 Q 386 556 386 584 Q 369 592 352 584 Z"/>
+    <path d="M386 600 Q 410 594 428 572 L 436 578 Q 418 606 392 616 Z"/>
+    <circle cx="438" cy="570" r="5"/>
+    <!-- an Imperial guard, with spear and shield -->
+    <line x1="472" y1="520" x2="472" y2="684" stroke="#0b0c0b" stroke-width="5"/>
+    <path d="M466 524 L472 504 L478 524 Z"/>
+    <path d="M480 600 Q 482 584 500 578 L 536 578 Q 554 584 556 600 L 548 640 L 488 640 Z"/>
+    <path d="M490 640 L 488 684 L 506 684 L 512 646 L 524 646 L 530 684 L 548 684 L 546 640 Z"/>
+    <path d="M500 578 Q 500 548 518 544 Q 536 548 536 578 Z"/>
+    <path d="M512 544 Q 518 528 526 540" fill="none"/>
+    <path d="M478 586 L 472 592 L 470 634 L 490 640 Z"/>
+    <ellipse cx="560" cy="612" rx="16" ry="26"/>
+    <!-- a commoner raising a tankard -->
+    <path d="M622 612 Q 626 594 640 590 L 668 590 Q 682 594 686 612 L 682 652 L 626 652 Z"/>
+    <path d="M630 652 L 628 690 L 646 690 L 652 658 L 658 658 L 664 690 L 682 690 L 678 652 Z"/>
+    <circle cx="654" cy="572" r="16"/>
+    <path d="M626 600 Q 606 596 598 576 L 606 572 Q 614 588 630 592 Z"/>
+    <rect x="590" y="556" width="16" height="20" rx="2"/>
+  </g>
+  <!-- speech, softly -->
+  <g fill="#fff6e6" opacity="0.85">
+    <rect x="404" y="500" width="62" height="30" rx="15"/>
+    <path d="M420 528 L414 542 L432 530 Z"/>
+    <rect x="626" y="512" width="62" height="30" rx="15"/>
+    <path d="M648 540 L646 552 L660 541 Z"/>
+  </g>
+  <g fill="#5a4a5e">
+    <circle cx="423" cy="515" r="3.5"/><circle cx="435" cy="515" r="3.5"/><circle cx="447" cy="515" r="3.5"/>
+    <circle cx="645" cy="527" r="3.5"/><circle cx="657" cy="527" r="3.5"/><circle cx="669" cy="527" r="3.5"/>
+  </g>
+
+  </g>
+
+  <!-- title -->
+  <rect x="0" y="0" width="1600" height="300" fill="url(#fade)"/>
+  <g filter="url(#glow)" font-family="'Palatino Linotype', 'Book Antiqua', Palatino, Georgia, serif">
+    <text x="90" y="190" font-size="112" font-weight="bold" letter-spacing="9" fill="url(#gold)" stroke="#3a2410" stroke-width="2">LIVING CYRODIIL</text>
+    <text x="96" y="245" font-size="36" letter-spacing="3" fill="#f6e7c6">Talk to anyone in Cyrodiil, in their own voice</text>
+  </g>
+  <g font-family="'Palatino Linotype', 'Book Antiqua', Palatino, Georgia, serif">
+    <rect x="1290" y="818" width="270" height="50" rx="8" fill="#000" opacity="0.45"/>
+    <text x="1425" y="852" font-size="26" letter-spacing="4" fill="#f3d28c" text-anchor="middle">EARLY ALPHA</text>
+  </g>
+</svg>

@@ -1,0 +1,63 @@
+# Cheydinhal, as it stands in 3E 433 at the start of the game.
+# Adapted from UESP (https://en.uesp.net), CC BY-SA 2.5. Pages:
+# Oblivion:Cheydinhal, Oblivion:Cheydinhal People, Lore:Cheydinhal (fetched Nov 10, 2026).
+# Left out: the Dark Brotherhood's sanctuary, the Mages Guild hall's secret,
+# the corrupt guard captains and other quest spoilers, the city's gate
+# (3E 433, quest-gated).
+
+[[entry]]
+id = "cheydinhal-overview"
+text = "Cheydinhal is a city in the Nibenay Basin of northeastern Cyrodiil, in the foothills of the Valus Mountains at the eastern end of the Blue Road, near the Morrowind border. Many Dunmer live there, and its buildings show their style."
+keywords = ["cheydinhal", "city", "town", "nibenay", "valus", "mountains", "blue road", "morrowind", "dunmer", "dark elf", "dark elves", "east"]
+known_by = "everyone"
+depth = "common"
+
+[[entry]]
+id = "cheydinhal-local-summary"
+text = "You live in Cheydinhal, a pleasant city of red roofs split by a little river: the western side has the shops, guild halls and Cheydinhal Castle, the eastern side the homes and the Great Chapel of Arkay, with bridges between. Count Andel Indarys, a Dunmer, rules here."
+keywords = ["cheydinhal", "city", "town", "here", "news", "river", "bridge", "bridges"]
+known_by = "locals:Cheydinhal"
+depth = "common"
+always = true
+
+[[entry]]
+id = "cheydinhal-ruler"
+text = "Count Andel Indarys rules Cheydinhal from its castle, a Dunmer once of House Hlaalu in Morrowind and the only ruler of a Cyrodiil county who isn't an Imperial, given the county for his service to the Empire. His son Farwil leads a band of young men who call themselves the Knights of the Thorn, more for show than anything."
+keywords = ["count", "ruler", "rules", "andel", "indarys", "castle", "court", "hlaalu", "dunmer", "farwil", "son", "knights of the thorn"]
+known_by = "locals:Cheydinhal"
+depth = "common"
+
+[[entry]]
+id = "cheydinhal-ruler-public"
+text = "Cheydinhal is ruled by Count Andel Indarys, a Dunmer, the only count in Cyrodiil who isn't an Imperial."
+keywords = ["cheydinhal", "count", "andel", "indarys"]
+known_by = "everyone"
+depth = "common"
+
+[[entry]]
+id = "cheydinhal-inns"
+text = "Cheydinhal has two inns: the Cheydinhal Bridge Inn, kept by Mariana Ancharia, and Newlands Lodge, run by the Dunmer Dervera Romalen, who isn't fond of her fellow Dark Elves."
+keywords = ["inn", "inns", "tavern", "room", "bed", "sleep", "drink", "ale", "food", "eat", "meal", "stay", "bridge inn", "newlands", "mariana", "dervera"]
+known_by = "locals:Cheydinhal"
+depth = "common"
+
+[[entry]]
+id = "cheydinhal-shops"
+text = "For trade in Cheydinhal: Borba's Goods and Stores, the Orc Borba gra-Uzgash's general store; the March Rider, where Tertia Viducia sells and repairs arms and armour; and Mach-Na's Books, run by an Argonian. Horses are kept at the Black Waterside Stables outside the gate."
+keywords = ["shop", "shops", "store", "buy", "sell", "trade", "goods", "smith", "blacksmith", "weapon", "weapons", "armor", "armour", "repair", "book", "books", "horse", "horses", "stables", "borba", "march rider", "tertia", "mach-na", "black waterside"]
+known_by = "locals:Cheydinhal"
+depth = "common"
+
+[[entry]]
+id = "cheydinhal-guilds"
+text = "Cheydinhal has halls of the Fighters Guild and the Mages Guild; the Mages Guild hall is led by Falcar, a stern, unfriendly Altmer, with the Argonian Deetsan doing most of the real work. The Great Chapel of Arkay, god of life and death, is the city's temple."
+keywords = ["guild", "guilds", "fighters guild", "mages guild", "falcar", "deetsan", "mage", "mages", "chapel", "temple", "arkay", "priest", "heal", "healing", "pray"]
+known_by = "locals:Cheydinhal"
+depth = "common"
+
+[[entry]]
+id = "cheydinhal-riverview"
+text = "Riverview, a big house in Cheydinhal, is known for the lavish parties held there every week."
+keywords = ["riverview", "party", "parties", "house", "feast"]
+known_by = "locals:Cheydinhal"
+depth = "common"

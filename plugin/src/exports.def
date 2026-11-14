@@ -1,0 +1,4 @@
+LIBRARY	"LivingCyrodiil"
+EXPORTS
+OBSEPlugin_Query
+OBSEPlugin_Load

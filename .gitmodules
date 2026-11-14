@@ -1,0 +1,4 @@
+[submodule "external/xOBSE"]
+	path = external/xOBSE
+	url = https://github.com/llde/xOBSE.git
+	ignore = dirty

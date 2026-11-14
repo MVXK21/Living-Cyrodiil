@@ -1,0 +1,69 @@
+# Reference material (other people's mods, never committed)
+reference/
+
+# Secrets and personal settings (API keys live here)
+.env
+settings.local.*
+config.local.*
+
+# Player data created while testing (NPC memories, conversation logs)
+data/memory/
+companion/memory/
+data/conversations/
+*.log
+logs/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Downloaded AI models (speech-to-text, text-to-speech)
+models/
+
+# Visual Studio and C++ build output
+.vs/
+build/
+Debug/
+Release/
+# ...but not the public release's docs (Release/ matches docs/release on Windows)
+!docs/release/
+x64/
+*.obj
+*.pdb
+*.ilk
+*.idb
+*.ipch
+*.user
+*.suo
+
+# Generated audio
+*.wav
+*.lip
+
+# Windows clutter
+Thumbs.db
+desktop.ini
+
+# Test caches
+.pytest_cache/
+
+# Test recordings from the speech tool (your voice)
+companion/recordings/
+
+# Lore test bench reports (regenerated on every run)
+companion/bench_results/
+
+# The player's own world knowledge entries
+companion/world_knowledge.txt
+
+# Voice test output
+companion/tts_test/
+
+# Voices built from the player's game files
+companion/cache/
+
+# Evidence of authorship (tools/make_provenance.py): the snapshots are big and
+# regenerable from git; manifest.txt and its .ots receipt are committed.
+provenance/*/*.zip

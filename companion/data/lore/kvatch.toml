@@ -1,0 +1,50 @@
+# Kvatch, before and after its fall.
+# Adapted from UESP (https://en.uesp.net), CC BY-SA 2.5. Pages:
+# Oblivion:Kvatch, Oblivion:Kvatch People, Lore:Kvatch (fetched Nov 10, 2026).
+# MVXK21 (Nov 9): Kvatch falls only once the player gets there, which the game
+# marks with its own KvatchDestroyed global (docs/phase5-3b-events.md, M1).
+# `until` entries are the city as it stands, given only before then; `quest`
+# entries are the ruins, given only after. Both are applied by step 3b; until
+# it's built, NPCs get the standing city.
+# Left out: who Brother Martin really is.
+
+[[entry]]
+id = "kvatch-overview"
+text = "Kvatch is a Colovian city on the Gold Coast, built high on a bluff above the Gold Road between Anvil and Skingrad. It's an old and proud city, with a castle, a small arena of its own, and the Chapel of Akatosh."
+keywords = ["kvatch", "city", "town", "gold coast", "gold road", "bluff", "hill", "arena", "chapel", "akatosh"]
+known_by = "everyone"
+depth = "common"
+until = "global:KvatchDestroyed"
+
+[[entry]]
+id = "kvatch-local-summary"
+text = "You live in Kvatch, high on its bluff over the Gold Road. Count Ormellius Goldwine rules from Castle Kvatch, the Chapel of Akatosh serves the city, and Kvatch's own little arena draws a crowd."
+keywords = ["kvatch", "city", "town", "here", "news"]
+known_by = "locals:Kvatch"
+depth = "common"
+always = true
+until = "global:KvatchDestroyed"
+
+[[entry]]
+id = "kvatch-ruler"
+text = "Kvatch is ruled by Count Ormellius Goldwine, an old and well-respected nobleman."
+keywords = ["kvatch", "count", "ruler", "rules", "ormellius", "goldwine", "castle"]
+known_by = "everyone"
+depth = "common"
+until = "global:KvatchDestroyed"
+
+[[entry]]
+id = "kvatch-fallen"
+text = "Kvatch has been destroyed. Daedra poured out of Oblivion Gates outside its walls one night and burned the city; Count Goldwine is thought dead, and the few survivors are camped below the city on the road, led by Savlian Matius, the acting captain of the guard."
+keywords = ["kvatch", "city", "destroyed", "daedra", "gate", "oblivion", "survivors", "refugees", "camp", "savlian", "matius", "goldwine", "count", "burned", "fallen"]
+known_by = "locals:Kvatch"   # everyone else learns of it from world event M1, as it spreads
+depth = "common"
+quest = "global:KvatchDestroyed"
+
+[[entry]]
+id = "kvatch-camp"
+text = "The Kvatch survivors' camp sits on the road below the ruined city: tents, a few guards under Savlian Matius, and refugees with nowhere else to go. Some have fled on to Skingrad and Anvil."
+keywords = ["camp", "refugee", "refugees", "survivors", "tents", "savlian", "matius", "kvatch", "skingrad", "anvil"]
+known_by = "locals:Kvatch"
+depth = "common"
+quest = "global:KvatchDestroyed"

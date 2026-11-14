@@ -1,0 +1,77 @@
+# Chorrol, as it stands in 3E 433 at the start of the game.
+# Adapted from UESP (https://en.uesp.net), CC BY-SA 2.5. Pages:
+# Oblivion:Chorrol, Oblivion:Chorrol People, Lore:Chorrol (fetched Nov 10, 2026).
+# Left out: quest spoilers (the stolen painting, the Jemane brothers, Hackdirt's
+# secret, the Odiil farm's goblins as they unfold), Fourth Era events.
+
+[[entry]]
+id = "chorrol-overview"
+text = "Chorrol is a Colovian city in the Great Forest of northwestern Cyrodiil, on the Black Road west of the Imperial City, with the Orange Road running northeast to Bruma. The Colovian Highlands and the Hammerfell border lie beyond it. A great oak stands in its central plaza, and the Fighters Guild has its head hall there."
+keywords = ["chorrol", "city", "town", "great forest", "black road", "orange road", "colovian", "highlands", "oak", "great oak"]
+known_by = "everyone"
+depth = "common"
+
+[[entry]]
+id = "chorrol-local-summary"
+text = "You live in Chorrol, a quiet, prosperous Colovian city around the Great Oak in its central plaza. The Chapel of Stendarr stands to one side and Castle Chorrol, where Countess Arriana Valga holds court, to the other; the Fighters Guild's head hall is here, and Weynon Priory lies just outside the walls."
+keywords = ["chorrol", "city", "town", "here", "news", "oak", "plaza"]
+known_by = "locals:Chorrol"
+depth = "common"
+always = true
+
+[[entry]]
+id = "chorrol-ruler"
+text = "Countess Arriana Valga rules Chorrol from Castle Chorrol. She is a widow, her husband having died in battle, and she's well liked; her daughter Alessia recently married Count Marius Caro of Leyawiin. Her steward is the Imperial Laythe Wavrick."
+keywords = ["countess", "count", "ruler", "rules", "arriana", "valga", "castle", "court", "widow", "alessia", "steward", "laythe"]
+known_by = "locals:Chorrol"
+depth = "common"
+
+[[entry]]
+id = "chorrol-ruler-public"
+text = "Chorrol is ruled by Countess Arriana Valga, a well-liked widow."
+keywords = ["chorrol", "countess", "arriana", "valga"]
+known_by = "everyone"
+depth = "common"
+
+[[entry]]
+id = "chorrol-inns"
+text = "Chorrol has two inns: the Grey Mare, a plain, cheap place kept by the Nord Emfrid, where common folk and Fighters Guild men drink; and the Oak and Crosier, the finer house by the Great Oak, kept by the Khajiit Talasma."
+keywords = ["inn", "inns", "tavern", "room", "bed", "sleep", "drink", "ale", "mead", "food", "eat", "meal", "stay", "grey mare", "gray mare", "oak and crosier", "emfrid", "talasma"]
+known_by = "locals:Chorrol"
+depth = "common"
+
+[[entry]]
+id = "chorrol-shops"
+text = "For trade in Chorrol: Fire and Steel, where the Redguard Rasheda sells and repairs arms and armour; Northern Goods and Trade, the Argonian Seed-Neeus's general store; and Renoit's Books, run by Estelle Renoit. Horses are kept at the North Country Stables outside the gate."
+keywords = ["shop", "shops", "store", "buy", "sell", "trade", "goods", "smith", "blacksmith", "weapon", "weapons", "armor", "armour", "repair", "book", "books", "horse", "horses", "stables", "fire and steel", "rasheda", "northern goods", "seed-neeus", "renoit", "estelle"]
+known_by = "locals:Chorrol"
+depth = "common"
+
+[[entry]]
+id = "chorrol-guilds"
+text = "The Fighters Guild's head hall is in Chorrol, and its Guildmaster, Vilena Donton, lives in the city with her son Viranus; the Dunmer Modryn Oreyn is one of the Guild's best fighters. The Mages Guild hall here is led by the Argonian Teekeeus."
+keywords = ["guild", "guilds", "fighters guild", "mages guild", "guildmaster", "vilena", "donton", "viranus", "modryn", "oreyn", "teekeeus", "mage", "mages", "fighter", "fighters", "work", "job", "contract"]
+known_by = "locals:Chorrol"
+depth = "common"
+
+[[entry]]
+id = "chorrol-chapel"
+text = "The Chapel of Stendarr in Chorrol is the city's great temple, devoted to Stendarr, god of mercy. Its priests heal and bless, and Brother Kellen is among them."
+keywords = ["chapel", "temple", "stendarr", "priest", "priests", "heal", "healing", "blessing", "pray", "worship", "kellen"]
+known_by = "locals:Chorrol"
+depth = "common"
+
+[[entry]]
+id = "chorrol-surroundings"
+text = "Outside Chorrol lie Weynon Priory, a quiet house of monks of Akatosh just east of the city; the Odiil farm to the north; and, a little way south, the backward village of Hackdirt, whose folk keep to themselves and don't welcome strangers."
+keywords = ["weynon", "priory", "monk", "monks", "odiil", "farm", "hackdirt", "village", "outside", "nearby", "near", "around"]
+known_by = "locals:Chorrol"
+depth = "common"
+
+[[entry]]
+id = "chorrol-history"
+text = "Chorrol is one of the old Colovian cities of western Cyrodiil, a place of forests, hunting and steady trade with Hammerfell and High Rock. Its people are proud, plain-spoken Colovians, more practical than the Nibenese of the east."
+keywords = ["history", "old", "colovian", "colovians", "hammerfell", "high rock", "west", "nibenese"]
+known_by = "locals:Chorrol"
+depth = "specialist"
+area = "history"

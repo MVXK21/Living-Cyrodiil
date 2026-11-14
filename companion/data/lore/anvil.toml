@@ -1,0 +1,70 @@
+# Anvil, as it stands in 3E 433 at the start of the game.
+# Adapted from UESP (https://en.uesp.net), CC BY-SA 2.5. Pages:
+# Oblivion:Anvil, Oblivion:Anvil People, Lore:Anvil (fetched Nov 10, 2026).
+# Left out: what became of Count Corvus (a Thieves Guild secret), the women
+# who rob men at the Flowing Bowl, the haunting's cause, Knights of the Nine,
+# and the city's gate (3E 433, quest-gated).
+
+[[entry]]
+id = "anvil-overview"
+text = "Anvil is a wealthy port city on the Gold Coast in far southwestern Cyrodiil, on the Abecean Sea at the western end of the Gold Road. Its harbour trades with Hammerfell and the Summerset Isles, and its white walls and buildings show the Redguards' influence."
+keywords = ["anvil", "city", "town", "gold coast", "abecean", "sea", "port", "harbour", "harbor", "gold road", "redguard", "redguards", "hammerfell", "ships"]
+known_by = "everyone"
+depth = "common"
+
+[[entry]]
+id = "anvil-local-summary"
+text = "You live in Anvil, a prosperous port on the Gold Coast. The city within the walls holds the shops, guild halls, homes and the Chapel of Dibella; the harbour lies outside the walls to the south, and Anvil Castle stands on its own island, home of Countess Millona Umbranox."
+keywords = ["anvil", "city", "town", "here", "news", "harbour", "harbor", "docks"]
+known_by = "locals:Anvil"
+depth = "common"
+always = true
+
+[[entry]]
+id = "anvil-ruler"
+text = "Countess Millona Umbranox rules Anvil from Anvil Castle. Her husband, Count Corvus Umbranox, vanished years ago without a word, and she has governed alone ever since, still hoping he'll come back."
+keywords = ["countess", "count", "ruler", "rules", "millona", "umbranox", "corvus", "castle", "court", "missing", "husband"]
+known_by = "locals:Anvil"
+depth = "common"
+
+[[entry]]
+id = "anvil-ruler-public"
+text = "Anvil is ruled by Countess Millona Umbranox, whose husband, the Count, disappeared years ago."
+keywords = ["anvil", "countess", "millona", "umbranox", "corvus"]
+known_by = "everyone"
+depth = "common"
+
+[[entry]]
+id = "anvil-inns"
+text = "Anvil has three taverns: the Count's Arms, the city's finest inn, kept by Wilbur; the Flowing Bowl, a rougher place run by Maenlorn; and the Fo'c's'le, a sailors' tavern down at the harbour."
+keywords = ["inn", "inns", "tavern", "taverns", "room", "bed", "sleep", "drink", "ale", "wine", "food", "eat", "meal", "stay", "count's arms", "counts arms", "wilbur", "flowing bowl", "maenlorn", "fo'c'sle", "focsle", "sailor", "sailors"]
+known_by = "locals:Anvil"
+depth = "common"
+
+[[entry]]
+id = "anvil-shops"
+text = "For trade in Anvil: Lelles' Quality Merchandise, Norbert Lelles's general store; and Morvayn's Peacemakers, where the Dunmer smith Varel Morvayn and his partner sell and repair arms and armour. Horses are kept at the Horse Whisperer Stables outside the walls."
+keywords = ["shop", "shops", "store", "buy", "sell", "trade", "goods", "smith", "blacksmith", "weapon", "weapons", "armor", "armour", "repair", "horse", "horses", "stables", "lelles", "norbert", "morvayn", "peacemakers", "varel", "horse whisperer"]
+known_by = "locals:Anvil"
+depth = "common"
+
+[[entry]]
+id = "anvil-guilds"
+text = "Anvil has a Fighters Guild hall and a Mages Guild hall, the latter led by the High Elf Carahil, who has made it known for keeping the roads around Anvil safe. The Chapel of Dibella, goddess of beauty and love, is the city's temple."
+keywords = ["guild", "guilds", "fighters guild", "mages guild", "carahil", "mage", "mages", "chapel", "temple", "dibella", "priest", "heal", "healing", "pray"]
+known_by = "locals:Anvil"
+depth = "common"
+
+[[entry]]
+id = "anvil-harbour"
+text = "Anvil's harbour, outside the walls, has the Fo'c's'le tavern, the harborside warehouse and ships at the docks, among them the Sea Tub Clarabella. Sailors from all over the Abecean pass through, and folk say pirates aren't far off the coast."
+keywords = ["harbour", "harbor", "docks", "dock", "ship", "ships", "sailor", "sailors", "pirate", "pirates", "clarabella", "warehouse", "lighthouse"]
+known_by = "locals:Anvil"
+depth = "common"
+
+[[entry]]
+id = "anvil-benirus-manor"
+text = "Benirus Manor in Anvil is said to be haunted; nobody will live in it, and its owner, Velwyn Benirus, is trying to sell it."
+keywords = ["benirus", "manor", "haunted", "ghost", "ghosts", "house", "velwyn", "sale", "buy"]
+known_by = "locals:Anvil"
+depth = "common"

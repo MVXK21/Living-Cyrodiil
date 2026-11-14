@@ -1,0 +1,33 @@
+// Version information shown in the DLL's Windows file properties
+// (right-click, Properties, Details): who made it and the copyright.
+#include <winver.h>
+#include "version.h"
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION     LC_VERSION_MAJOR, LC_VERSION_MINOR, LC_VERSION_PATCH, 0
+ PRODUCTVERSION  LC_VERSION_MAJOR, LC_VERSION_MINOR, LC_VERSION_PATCH, 0
+ FILEFLAGSMASK   VS_FFI_FILEFLAGSMASK
+ FILEFLAGS       0
+ FILEOS          VOS_NT_WINDOWS32
+ FILETYPE        VFT_DLL
+ FILESUBTYPE     VFT2_UNKNOWN
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName",      "MVXK21"
+            VALUE "FileDescription",  "Living Cyrodiil xOBSE plugin"
+            VALUE "FileVersion",      LC_VERSION_STRING
+            VALUE "InternalName",     "LivingCyrodiil"
+            VALUE "LegalCopyright",   "Copyright (c) 2026 MVXK21. All rights reserved."
+            VALUE "OriginalFilename", "LivingCyrodiil.dll"
+            VALUE "ProductName",      "Living Cyrodiil"
+            VALUE "ProductVersion",   LC_VERSION_STRING
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
