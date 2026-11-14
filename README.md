@@ -2,7 +2,13 @@
 
 An LLM-powered conversation mod for The Elder Scrolls IV: Oblivion (original GOTY edition, patch 1.2.0416, with xOBSE). Speak into your microphone to any NPC and hear a lore-grounded, in-character spoken reply.
 
-This repository holds the full source of the mod as released on Nexus Mods, and instructions for building it: see **[BUILD.md](BUILD.md)**.
+## Download
+
+**To play, download `LivingCyrodiil-<version>-alpha.zip` from the [Releases page](https://github.com/MVXK21/Living-Cyrodiil/releases/latest)** (also coming to Nexus Mods). Install it with your mod manager like any mod, then follow the README inside the zip. You don't need anything else from this page.
+
+## Source
+
+This repository holds the full source of the mod, and instructions for building it: see **[BUILD.md](BUILD.md)**.
 
 ## What's here
 
